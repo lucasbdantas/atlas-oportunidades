@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Atlas de Oportunidades — Lucas Dantas</title>
+<style>
+:root{--bg:#eef4fa;--paper:#fff;--ink:#0f172a;--muted:#64748b;--line:#d8e2ee;--orange:#f59e0b;--green:#16a34a;--blue:#2563eb;--red:#dc2626;--amber:#d97706;--greenSoft:#ecfdf5;--blueSoft:#eff6ff;--amberSoft:#fffbeb;--redSoft:#fef2f2;--shadow:0 18px 48px rgba(15,23,42,.10)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:radial-gradient(circle at top left,#fff7ed 0,var(--bg) 36rem)}.app{max-width:1500px;margin:0 auto;padding:28px}
+.hero{background:linear-gradient(135deg,#060914,#111827 58%,#2a1903);color:white;border-radius:34px;padding:34px;box-shadow:var(--shadow);overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:460px;height:460px;right:-120px;top:-180px;background:rgba(245,158,11,.20);border-radius:50%;filter:blur(14px)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;position:relative;z-index:1}.eyebrow{color:#ffd28c;font-weight:900;text-transform:uppercase;letter-spacing:.18em;font-size:12px;margin-bottom:12px}h1{margin:0;font-size:clamp(36px,5vw,64px);line-height:.96;letter-spacing:-.06em}h2{margin:0;font-size:28px;letter-spacing:-.035em}h3{margin:0;font-size:20px;letter-spacing:-.025em}p{line-height:1.55}.hero p{color:#d1d5db;max-width:980px;font-size:16px}.hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:20px;backdrop-filter:blur(8px)}.hero-card strong{display:block;margin-bottom:8px}.hero-card span{color:#dbe4ee;font-size:13px;line-height:1.45}
+.nav{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}.nav a,.mini{border:1px solid var(--line);border-radius:999px;background:white;color:var(--ink);padding:10px 14px;font-size:13px;font-weight:850;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}.nav a{color:white;border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.08)}.mini.dark{background:#111827;color:white;border-color:#111827}
+.section{margin-top:28px;padding:26px;background:rgba(255,255,255,.95);border:1px solid var(--line);border-radius:30px;box-shadow:var(--shadow)}.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;margin-bottom:20px}.sub{color:var(--muted);font-size:14px;margin:8px 0 0;line-height:1.5;max-width:1060px}.grid{display:grid;gap:16px}.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.metric{background:white;border:1px solid var(--line);border-radius:22px;padding:18px;min-height:112px}.metric .label{color:var(--muted);text-transform:uppercase;font-size:11px;letter-spacing:.08em;font-weight:950}.metric .value{font-size:28px;font-weight:950;letter-spacing:-.04em;margin-top:8px}.metric .hint{color:var(--muted);font-size:13px;line-height:1.35}
+.panel-card{background:white;border:1px solid var(--line);border-radius:28px;padding:24px;min-height:390px;position:relative;overflow:hidden}.panel-card:before{content:"";position:absolute;left:0;top:0;width:9px;height:100%}.panel-card.vagas:before{background:var(--green)}.panel-card.intl:before{background:var(--blue)}.kicker{font-weight:900;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--muted);margin-bottom:10px}.tag-row{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.tag{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:12px;font-weight:850;background:white}.tag.green{background:var(--greenSoft);color:#166534;border-color:#bbf7d0}.tag.blue{background:var(--blueSoft);color:#1d4ed8;border-color:#bfdbfe}.tag.amber{background:var(--amberSoft);color:#92400e;border-color:#fed7aa}.tag.red{background:var(--redSoft);color:#991b1b;border-color:#fecaca}.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.matrix{position:relative;height:620px;border:1px solid var(--line);border-radius:28px;overflow:hidden;background:white}.quad{position:absolute;width:50%;height:50%;padding:18px;font-weight:950;font-size:14px}.q1{left:0;top:0;background:var(--redSoft);color:#991b1b}.q2{right:0;top:0;background:var(--greenSoft);color:#166534;text-align:right}.q3{left:0;bottom:0;background:#f8fafc;color:#475569}.q4{right:0;bottom:0;background:var(--amberSoft);color:#92400e;text-align:right}.axis-x,.axis-y{position:absolute;background:#334155;z-index:2}.axis-x{left:42px;right:42px;bottom:58px;height:3px}.axis-y{left:58px;top:42px;bottom:42px;width:3px}.axis-label-x{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);font-size:12px;color:#475569;font-weight:950;text-transform:uppercase;letter-spacing:.08em;z-index:3}.axis-label-y{position:absolute;left:-24px;top:50%;transform:rotate(-90deg);font-size:12px;color:#475569;font-weight:950;text-transform:uppercase;letter-spacing:.08em;z-index:3}.dot{position:absolute;z-index:4;width:170px;transform:translate(-50%,-50%);border:1px solid var(--line);background:rgba(255,255,255,.97);border-radius:16px;padding:10px 11px;box-shadow:0 10px 24px rgba(15,23,42,.09)}.dot strong{display:block;font-size:13px}.dot span{display:block;margin-top:4px;font-size:11px;color:var(--muted);font-weight:800}.dot.green{border-color:#86efac}.dot.blue{border-color:#93c5fd}.dot.amber{border-color:#fdba74}.dot.red{border-color:#fca5a5}
+.route-card{border:1px solid var(--line);border-radius:24px;padding:20px;background:white}.route-card.good{background:var(--greenSoft);border-color:#bbf7d0}.route-card.blue{background:var(--blueSoft);border-color:#bfdbfe}.route-card.warn{background:var(--amberSoft);border-color:#fed7aa}.route-card.bad{background:var(--redSoft);border-color:#fecaca}.route-card ul{margin:12px 0 0;padding-left:20px;color:#334155;font-size:14px;line-height:1.55}.compare{width:100%;border-collapse:collapse;font-size:14px;overflow:hidden;border-radius:20px}.compare th,.compare td{text-align:left;padding:14px;border-bottom:1px solid #e2e8f0;vertical-align:top}.compare th{font-size:11px;color:#475569;text-transform:uppercase;letter-spacing:.06em;background:#f8fafc}.footer{color:var(--muted);font-size:12px;line-height:1.5;padding:24px 4px}
+@media(max-width:1100px){.hero-grid,.grid-4,.grid-3,.grid-2{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.matrix{height:540px}.dot{width:140px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="hero">
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Portal central · versão 1</div>
+<h1>Atlas de Oportunidades — Lucas Dantas</h1>
+<p>Um hub para navegar entre oportunidades de carreira imediata e rotas internacionais de médio/longo prazo, sem misturar métricas incompatíveis no mesmo painel.</p>
+<nav class="nav">
+<a href="#paineis">Painéis</a><a href="#estrategia">Matriz geral</a><a href="#rotas">Rotas estratégicas</a><a href="#comparativo">Comparativo</a><a href="painel_vagas_lucas.html">Abrir vagas</a><a href="painel_internacional_lucas.html">Abrir internacional</a>
+</nav>
+</div>
+<div class="hero-card"><strong>Regra do atlas</strong><span>Vagas e intercâmbios não competem diretamente. O hub mostra a relação estratégica entre curto prazo profissional e médio/longo prazo acadêmico-internacional.</span></div>
+</div>
+</header>
+
+<section class="section">
+<div class="grid grid-4">
+<div class="metric"><div class="label">Frente imediata</div><div class="value">Vagas</div><div class="hint">estágio, empresa, função, risco de área ruim</div></div>
+<div class="metric"><div class="label">Frente 2027–2029</div><div class="value">Global</div><div class="hint">mestrado, funding, pesquisa e bolsas</div></div>
+<div class="metric"><div class="label">Eixo principal</div><div class="value">Energia</div><div class="hint">eletrificação, ativos, smart grids, dados</div></div>
+<div class="metric"><div class="label">Cuidado central</div><div class="value">Glamour</div><div class="hint">marca boa não compensa rota ruim</div></div>
+</div>
+</section>
+
+<section class="section" id="paineis">
+<div class="section-head"><div><h2>1. Painéis especialistas</h2><p class="sub">Cada painel mantém sua régua própria. Este hub só conecta a leitura estratégica.</p></div></div>
+<div class="grid grid-2">
+<article class="panel-card vagas">
+<div class="kicker">Curto prazo · carreira</div><h3>Carreira & Estágios</h3>
+<p class="sub">Painel para comparar empresas, vagas abertas, programas recorrentes e empresas-alvo. Mede fit técnico, fit de carreira, acesso/logística, risco de desalinhamento e dependência da área.</p>
+<div class="tag-row"><span class="tag green">Serena</span><span class="tag green">CPFL</span><span class="tag green">Solvay</span><span class="tag green">Endress</span><span class="tag blue">Bosch</span><span class="tag amber">Microsoft / Samsung / B3</span></div>
+<p><b>Melhor uso:</b> decidir onde aplicar, quais empresas monitorar e quais vagas descartar por risco de função ruim.</p>
+<div class="links"><a class="mini dark" href="painel_vagas_lucas.html">Abrir painel de vagas</a><a class="mini" href="painel_vagas_lucas.html#matrix">Abrir matriz</a><a class="mini" href="painel_vagas_lucas.html#cards">Abrir cards</a></div>
+</article>
+<article class="panel-card intl">
+<div class="kicker">Médio/longo prazo · internacional</div><h3>Internacional & Pós-graduação</h3>
+<p class="sub">Painel para mapear mestrados, research internships, bolsas, programas funded, rotas de pesquisa e armadilhas caras. Mede funding, chance real, risco financeiro, fit acadêmico e risco de glamour.</p>
+<div class="tag-row"><span class="tag blue">Grenoble Smart Grids</span><span class="tag blue">InnoEnergy</span><span class="tag blue">MEXT</span><span class="tag green">Canadá funded</span><span class="tag amber">KAUST / OIST</span><span class="tag red">EUA self-funded</span></div>
+<p><b>Melhor uso:</b> separar oportunidades internacionais realmente transformadoras de opções bonitas, caras e pouco racionais.</p>
+<div class="links"><a class="mini dark" href="painel_internacional_lucas.html">Abrir painel internacional</a><a class="mini" href="painel_internacional_lucas.html#matrix">Abrir matrizes</a><a class="mini" href="painel_internacional_lucas.html#financeiro">Abrir régua financeira</a></div>
+</article>
+</div>
+</section>
+
+<section class="section" id="estrategia">
+<div class="section-head"><div><h2>2. Matriz geral de estratégia</h2><p class="sub">Não é uma matriz de candidatura. É uma leitura de horizonte: o que pode mudar sua trajetória agora versus depois.</p></div></div>
+<div class="matrix">
+<div class="quad q1">Alto impacto · longo prazo</div><div class="quad q2">Alto impacto · curto prazo</div><div class="quad q3">Baixo impacto · longo prazo</div><div class="quad q4">Impacto tático · curto prazo</div>
+<div class="axis-x"></div><div class="axis-y"></div><div class="axis-label-x">Horizonte de tempo → curto prazo</div><div class="axis-label-y">Impacto na trajetória</div>
+<div class="dot blue" style="left:28%;top:19%"><strong>Grenoble / InnoEnergy</strong><span>smart grids, energia, mestrado</span></div>
+<div class="dot blue" style="left:22%;top:32%"><strong>MEXT / Canadá funded</strong><span>pesquisa, funding, power/AI</span></div>
+<div class="dot amber" style="left:31%;top:78%"><strong>Masters caros sem bolsa</strong><span>glamour alto, ROI duvidoso</span></div>
+<div class="dot green" style="left:78%;top:21%"><strong>CPFL / Solvay / Endress</strong><span>alto fit + acesso forte</span></div>
+<div class="dot green" style="left:70%;top:32%"><strong>Serena / HDT / Ecogen</strong><span>energia limpa + projetos</span></div>
+<div class="dot amber" style="left:77%;top:69%"><strong>Microsoft / Samsung / B3</strong><span>transição tech/dados seletiva</span></div>
+<div class="dot red" style="left:78%;top:84%"><strong>Comercial / atendimento</strong><span>evitar se não for técnico</span></div>
+</div>
+</section>
+
+<section class="section" id="rotas">
+<div class="section-head"><div><h2>3. Rotas estratégicas combinadas</h2><p class="sub">Pontes entre os dois painéis: estágio certo fortalece candidatura internacional; oportunidade internacional certa redefine carreira.</p></div></div>
+<div class="grid grid-3">
+<div class="route-card good"><h3>Rota A — Energia + Ativos + Smart Grids</h3><ul><li><b>Vagas:</b> CPFL, Serena, Solvay, Endress, Hitachi, Schneider se técnica.</li><li><b>Internacional:</b> Grenoble, InnoEnergy, Canadá MASc, MEXT.</li><li><b>Leitura:</b> rota mais coerente com Elétrica + Siemens + IA em smart grids.</li></ul></div>
+<div class="route-card blue"><h3>Rota B — Indústria + Automação + Produto</h3><ul><li><b>Vagas:</b> Bosch, Eaton, Endress, Embraer, WEG.</li><li><b>Internacional:</b> RWTH, Chalmers, KAIST, POSTECH, NTU/NUS funded.</li><li><b>Leitura:</b> ótima para engenharia aplicada e tecnologia industrial.</li></ul></div>
+<div class="route-card warn"><h3>Rota C — Dados/IA + Energia</h3><ul><li><b>Vagas:</b> Microsoft, Samsung SRBR, B3 se dados/produto, CNPEM.</li><li><b>Internacional:</b> OIST, ISTA, KAUST, data centers sustentáveis, AI for energy.</li><li><b>Leitura:</b> boa, mas não pode virar tech genérico sem energia.</li></ul></div>
+<div class="route-card good"><h3>Rota D — Data Centers Sustentáveis</h3><ul><li><b>Vagas:</b> energia, automação, eficiência, data/AI aplicado e infraestrutura.</li><li><b>Internacional:</b> labs em data centers, power systems, cooling, AI infrastructure.</li><li><b>Leitura:</b> eixo autoral para TCC + carreira internacional.</li></ul></div>
+<div class="route-card bad"><h3>Zona de risco — Marca bonita, rota ruim</h3><ul><li><b>Vagas:</b> atendimento, comercial puro, customer success genérico, banco operacional.</li><li><b>Internacional:</b> mestrado pago caro, bolsa incerta, programa famoso sem funding.</li><li><b>Leitura:</b> não confundir prestígio com direção estratégica.</li></ul></div>
+<div class="route-card warn"><h3>Rota E — Finanças/Dados como ponte</h3><ul><li><b>Vagas:</b> B3, Itaú, BTG, Santander só se dados, risco, produto ou analytics.</li><li><b>Internacional:</b> energy markets, energy systems, technical policy com funding.</li><li><b>Leitura:</b> útil se conectar energia + dados + mercado; perigosa se virar banco genérico.</li></ul></div>
+</div>
+</section>
+
+<section class="section" id="comparativo">
+<div class="section-head"><div><h2>4. Comparativo rápido dos painéis</h2><p class="sub">Use isto para escolher qual painel abrir dependendo da dúvida.</p></div></div>
+<table class="compare">
+<thead><tr><th>Pergunta</th><th>Painel certo</th><th>Por quê</th></tr></thead>
+<tbody>
+<tr><td>“Essa vaga vale meu tempo?”</td><td><b>Carreira & Estágios</b></td><td>Compara função, empresa, área, acesso, fit técnico e risco de cair em trabalho desalinhado.</td></tr>
+<tr><td>“Esse mestrado/bolsa é realista?”</td><td><b>Internacional & Pós-graduação</b></td><td>Compara funding, chance real, custo, requisitos, idioma, prestígio e risco de glamour.</td></tr>
+<tr><td>“Qual caminho fortalece minha narrativa?”</td><td><b>Atlas / Hub</b></td><td>Mostra as rotas combinadas entre estágio atual, carreira técnica e plano internacional.</td></tr>
+<tr><td>“Devo aceitar uma vaga fora do eixo energia?”</td><td><b>Carreira + Atlas</b></td><td>Verifique se a vaga vira ponte para dados/IA/infra ou se é desvio de rota.</td></tr>
+<tr><td>“Vale mirar fora do Brasil?”</td><td><b>Internacional + Atlas</b></td><td>Abra a régua financeira e veja se a rota é funded, realista e alinhada ao seu eixo.</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="footer">Este hub funciona melhor quando salvo na mesma pasta dos dois painéis. Os botões usam links relativos: <b>painel_vagas_lucas.html</b> e <b>painel_internacional_lucas.html</b>.</section>
+</div>
+</body>
+</html>
