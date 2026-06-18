@@ -4,10 +4,12 @@ import argparse
 import json
 import os
 import re
+import unicodedata
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 from deduplicador import Deduplicador, normalize_text, normalize_url
 from emailer import send_report, smtp_configured
@@ -98,6 +100,102 @@ INTERNATIONAL_TERMS = (
     "masters",
     "funded",
 )
+BLOCKED_AUTO_NEW_DOMAINS = (
+    "linkedin.com",
+    "indeed.com",
+    "glassdoor.com",
+    "reddit.com",
+    "instagram.com",
+    "facebook.com",
+    "youtube.com",
+    "theforage.com",
+)
+SOCIAL_DOMAINS = (
+    "reddit.com",
+    "instagram.com",
+    "facebook.com",
+    "youtube.com",
+    "tiktok.com",
+    "x.com",
+    "twitter.com",
+)
+NEWS_DOMAINS = (
+    "g1.globo.com",
+    "globo.com",
+    "uol.com.br",
+    "folha.uol.com.br",
+    "estadao.com.br",
+    "exame.com",
+    "valor.globo.com",
+    "cnnbrasil.com.br",
+    "bbc.com",
+)
+APPLY_SOURCE_DOMAINS = (
+    "gupy.io",
+    "myworkdayjobs.com",
+    "workdayjobs.com",
+    "greenhouse.io",
+    "lever.co",
+    "99jobs.com",
+    "ciadetalentos.com.br",
+    "ciadeestagios.com.br",
+    "nube.com.br",
+    "companhiadeestagios.com.br",
+)
+GENERIC_JOB_BOARD_DOMAINS = (
+    "linkedin.com",
+    "indeed.com",
+    "glassdoor.com",
+    "jooble.org",
+    "simplyhired.com",
+    "catho.com.br",
+    "infojobs.com.br",
+    "vagas.com.br",
+    "empregos.com.br",
+)
+GENERIC_RESULT_TERMS = (
+    "vagas de",
+    "vagas para",
+    "empregos de",
+    "salarios",
+    "salario",
+    "salary",
+    "search jobs",
+    "job search",
+    "resultados",
+    "busca",
+)
+SPECIFIC_OPPORTUNITY_TERMS = (
+    "estagio",
+    "internship",
+    "trainee",
+    "programa",
+    "bolsa",
+    "scholarship",
+    "research internship",
+    "summer",
+    "analyst",
+    "engenheiro",
+    "engenheira",
+    "consultor",
+    "consultora",
+)
+OFFICIAL_PATH_TERMS = (
+    "career",
+    "careers",
+    "carreira",
+    "carreiras",
+    "jobs",
+    "vagas",
+    "apply",
+    "application",
+    "candidatura",
+    "program",
+    "programa",
+    "early-careers",
+    "estagio",
+    "internship",
+)
 
 
 @dataclass
@@ -149,6 +247,192 @@ def slugify(value: str) -> str:
     value = normalize_text(value)
     value = re.sub(r"[^a-z0-9]+", "-", value).strip("-")
     return value[:80] or "oportunidade"
+
+
+def domain_from_url(url: str) -> str:
+    parsed = urlparse(url if "://" in url else f"https://{url}")
+    host = (parsed.netloc or parsed.path.split("/")[0]).casefold()
+    return re.sub(r"^www\.", "", host)
+
+
+def domain_matches(domain: str, blocked_domains: tuple[str, ...]) -> bool:
+    return any(domain == blocked or domain.endswith(f".{blocked}") for blocked in blocked_domains)
+
+
+def source_text(value: str) -> str:
+    normalized = normalize_text(value)
+    return "".join(
+        char for char in unicodedata.normalize("NFKD", normalized) if not unicodedata.combining(char)
+    )
+
+
+def source_details(candidate: dict[str, Any]) -> tuple[str, str]:
+    title = str(candidate.get("opportunity") or candidate.get("program") or candidate.get("title") or "")
+    url = str(candidate.get("applyUrl") or candidate.get("url") or candidate.get("companyUrl") or "")
+    return url, title
+
+
+def is_social_or_news_source(url: str) -> bool:
+    domain = domain_from_url(url)
+    return domain_matches(domain, SOCIAL_DOMAINS) or domain_matches(domain, NEWS_DOMAINS)
+
+
+def is_hard_veto_domain(url: str) -> bool:
+    return domain_matches(domain_from_url(url), BLOCKED_AUTO_NEW_DOMAINS)
+
+
+def is_low_value_hard_veto_source(url: str, title: str) -> bool:
+    text = source_text(f"{title} {url}")
+    parsed = urlparse(url if "://" in url else f"https://{url}")
+    raw_path = parsed.path.casefold()
+    path = source_text(parsed.path)
+    query = source_text(parsed.query)
+    low_value_terms = (
+        "comentario",
+        "comentarios",
+        "comment",
+        "comments",
+        "post",
+        "posts",
+        "activity",
+        "salario",
+        "salarios",
+        "salary",
+        "review",
+        "reviews",
+        "forum",
+        "search",
+        "busca",
+        "vagas de",
+        "empregos de",
+    )
+    low_value_paths = (
+        "/posts/",
+        "/post/",
+        "/p/",
+        "/reel/",
+        "/watch",
+        "/activity",
+        "/feed/",
+        "/search",
+        "/jobs/search",
+    )
+
+    return (
+        any(term in text for term in low_value_terms)
+        or any(part in raw_path for part in low_value_paths)
+        or bool(query and any(part in raw_path for part in ("/search", "/jobs", "/vagas")))
+    )
+
+
+def is_generic_job_board_result(url: str, title: str) -> bool:
+    domain = domain_from_url(url)
+    text = source_text(f"{title} {url}")
+    parsed = urlparse(url if "://" in url else f"https://{url}")
+    path = source_text(parsed.path)
+    query = source_text(parsed.query)
+
+    if domain_matches(domain, GENERIC_JOB_BOARD_DOMAINS):
+        return True
+    if any(term in text for term in GENERIC_RESULT_TERMS):
+        return True
+    if any(part in path for part in ("/search", "/jobs", "/vagas")) and query:
+        return True
+    return False
+
+
+def is_official_or_apply_source(url: str, title: str) -> bool:
+    domain = domain_from_url(url)
+    text = source_text(f"{title} {url}")
+    parsed = urlparse(url if "://" in url else f"https://{url}")
+    path = source_text(parsed.path)
+
+    if not domain or domain_matches(domain, BLOCKED_AUTO_NEW_DOMAINS):
+        return False
+    if is_social_or_news_source(url) or is_generic_job_board_result(url, title):
+        return False
+
+    has_specific_title = any(term in text for term in SPECIFIC_OPPORTUNITY_TERMS)
+    has_apply_domain = domain_matches(domain, APPLY_SOURCE_DOMAINS)
+    has_official_path = any(term in path for term in OFFICIAL_PATH_TERMS)
+    has_career_subdomain = domain.split(".")[0] in {"career", "careers", "carreira", "carreiras", "jobs", "vagas"}
+    has_identifiable_source = bool(domain.split(".")[0]) and domain not in {"google.com", "bing.com"}
+
+    return has_identifiable_source and has_specific_title and (has_apply_domain or has_official_path or has_career_subdomain)
+
+
+def is_official_career_source(url: str, title: str) -> bool:
+    domain = domain_from_url(url)
+    parsed = urlparse(url if "://" in url else f"https://{url}")
+    path = source_text(parsed.path)
+    has_career_subdomain = domain.split(".")[0] in {"career", "careers", "carreira", "carreiras", "jobs", "vagas"}
+    if not domain or domain_matches(domain, BLOCKED_AUTO_NEW_DOMAINS):
+        return False
+    if is_social_or_news_source(url) or is_generic_job_board_result(url, title):
+        return False
+    return domain_matches(domain, APPLY_SOURCE_DOMAINS) or has_career_subdomain or any(term in path for term in OFFICIAL_PATH_TERMS)
+
+
+def has_minimum_lucas_fit(candidate: dict[str, Any]) -> bool:
+    text = source_text(" ".join(str(value) for value in candidate.values()))
+    good_score = sum(1 for term in GOOD_TERMS if source_text(term) in text)
+    bad_score = sum(1 for term in BAD_TERMS if source_text(term) in text)
+    return good_score >= 2 and bad_score < 2
+
+
+def hard_veto_classification(candidate: dict[str, Any], duplicate_reason: str) -> tuple[str, int, str] | None:
+    if duplicate_reason != "novo":
+        return None
+
+    url, title = source_details(candidate)
+    if not is_hard_veto_domain(url):
+        return None
+
+    if is_low_value_hard_veto_source(url, title) or is_generic_job_board_result(url, title):
+        return "descartada", 15, "Fonte vetada para nova entrada automatica: agregador, post social, comentario, salario ou busca ampla."
+    if has_minimum_lucas_fit(candidate):
+        return "monitorar", 30, "Fonte vetada para nova entrada automatica; usar apenas como sinal secundario e procurar a fonte oficial."
+    return "descartada", 15, "Fonte vetada e sem sinais suficientes para monitoramento."
+
+
+def calibrate_source_classification(
+    candidate: dict[str, Any],
+    classificacao: str,
+    prioridade: int,
+    motivo: str,
+) -> tuple[str, int, str]:
+    if classificacao == "repetida":
+        return classificacao, prioridade, motivo
+
+    url, title = source_details(candidate)
+    domain = domain_from_url(url)
+    blocked_auto_new = domain_matches(domain, BLOCKED_AUTO_NEW_DOMAINS) or is_social_or_news_source(url)
+    generic_board = is_generic_job_board_result(url, title)
+    official_apply = is_official_or_apply_source(url, title)
+    official_career = is_official_career_source(url, title)
+    has_fit = has_minimum_lucas_fit(candidate)
+
+    if blocked_auto_new:
+        if is_low_value_hard_veto_source(url, title) or generic_board:
+            return "descartada", min(max(prioridade, 10), 20), "Fonte vetada para nova entrada automatica: agregador, post social, comentario, salario ou busca ampla."
+        if is_social_or_news_source(url):
+            return "monitorar", min(max(prioridade, 10), 35), "Fonte social/noticia: usar apenas como sinal secundario, sem entrada automatica no Atlas."
+        return "monitorar", min(max(prioridade, 30), 50), "Agregador ou fonte bloqueada para nova entrada automatica; validar fonte oficial antes."
+
+    if generic_board:
+        return "monitorar", min(max(prioridade, 30), 50), "Resultado de agregador ou busca generica; monitorar e procurar candidatura oficial."
+
+    if official_apply and has_fit:
+        if classificacao in {"nova", "atualizacao"}:
+            return classificacao, min(95, max(prioridade, 75)), motivo
+        return "nova", min(95, max(prioridade, 75)), "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+
+    if official_career:
+        return "monitorar", min(max(prioridade, 45), 60), "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+
+    if classificacao in {"nova", "atualizacao"}:
+        return "monitorar", min(max(prioridade, 30), 60), "Faltam sinais fortes de fonte oficial, candidatura confiavel ou oportunidade especifica."
+    return classificacao, prioridade, motivo
 
 
 def infer_company(title: str, link: str) -> str:
@@ -456,10 +740,13 @@ def process_results(results: list[dict[str, str]], vagas: list[dict[str, Any]], 
         destino, candidate = result_to_candidate(raw)
         dedup = dedup_internacional if destino == "internacional" else dedup_vagas
         duplicate_reason, _, duplicate_score = dedup.find_match(candidate)
-        classification = classify_with_openai(candidate, destino, duplicate_reason)
+        classification = hard_veto_classification(candidate, duplicate_reason)
+        if classification is None:
+            classification = classify_with_openai(candidate, destino, duplicate_reason)
         if classification is None:
             classification = classify_with_rules(candidate, destino, duplicate_reason)
         classificacao, prioridade, motivo = classification
+        classificacao, prioridade, motivo = calibrate_source_classification(candidate, classificacao, prioridade, motivo)
         apply_scores(candidate, prioridade, motivo, destino)
         processed.append(RadarResult(candidate, destino, classificacao, prioridade, motivo, duplicate_reason, duplicate_score))
     return processed
@@ -482,7 +769,13 @@ def build_history_entry(item: RadarResult, run_date: str) -> dict[str, Any]:
 
 
 def should_add_to_atlas(item: RadarResult) -> bool:
-    return item.classificacao in {"nova", "atualizacao"} and item.prioridade >= 65
+    url, title = source_details(item.candidate)
+    return (
+        item.classificacao in {"nova", "atualizacao"}
+        and item.prioridade >= 65
+        and is_official_or_apply_source(url, title)
+        and has_minimum_lucas_fit(item.candidate)
+    )
 
 
 def generate_report(processed: list[RadarResult], errors: list[str], dry_run: bool, search_executed: bool, run_date: str) -> tuple[Path, str]:
@@ -512,11 +805,7 @@ def generate_report(processed: list[RadarResult], errors: list[str], dry_run: bo
         lines.extend(f"- {error}" for error in errors)
         lines.append("")
 
-    for section in ["nova", "atualizacao", "monitorar", "repetida", "descartada"]:
-        section_items = [item for item in processed if item.classificacao == section]
-        if not section_items:
-            continue
-        lines.extend([f"## {section.capitalize()}", ""])
+    def add_items(section_items: list[RadarResult]) -> None:
         for item in sorted(section_items, key=lambda entry: entry.prioridade, reverse=True):
             candidate = item.candidate
             title = candidate.get("opportunity") or candidate.get("program")
@@ -534,6 +823,29 @@ def generate_report(processed: list[RadarResult], errors: list[str], dry_run: bo
                     "",
                 ]
             )
+
+    atlas_items = [item for item in processed if should_add_to_atlas(item)]
+    monitor_items = [
+        item
+        for item in processed
+        if item.classificacao == "monitorar"
+        or (item.classificacao in {"nova", "atualizacao"} and not should_add_to_atlas(item))
+    ]
+
+    if atlas_items:
+        lines.extend(["## Novas adicionadas ao Atlas", ""])
+        add_items(atlas_items)
+
+    if monitor_items:
+        lines.extend(["## Fontes úteis para monitorar", ""])
+        add_items(monitor_items)
+
+    for section in ["repetida", "descartada"]:
+        section_items = [item for item in processed if item.classificacao == section]
+        if not section_items:
+            continue
+        lines.extend([f"## {section.capitalize()}", ""])
+        add_items(section_items)
 
     if not processed:
         lines.extend(["## Resultado", "", "Nenhuma oportunidade nova foi coletada nesta execução.", ""])
