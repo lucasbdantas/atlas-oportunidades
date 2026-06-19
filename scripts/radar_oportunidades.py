@@ -108,6 +108,11 @@ BLOCKED_AUTO_NEW_DOMAINS = (
     "instagram.com",
     "facebook.com",
     "youtube.com",
+    "opportunitiescorners.com",
+    "opportunitydesk.org",
+    "gyanmirai.com",
+    "japan-dev.com",
+    "hackingthecaseinterview.com",
     "theforage.com",
 )
 SOCIAL_DOMAINS = (
@@ -141,6 +146,22 @@ APPLY_SOURCE_DOMAINS = (
     "ciadeestagios.com.br",
     "nube.com.br",
     "companhiadeestagios.com.br",
+)
+OFFICIAL_INTERNATIONAL_DOMAINS = (
+    "oist.jp",
+    "daad.de",
+    "iaeste.org",
+    "europa.eu",
+    "ec.europa.eu",
+    "erasmus-plus.ec.europa.eu",
+    "campusfrance.org",
+    "br.emb-japan.go.jp",
+)
+ACADEMIC_DOMAIN_PARTS = (
+    ".edu",
+    ".ac.",
+    ".edu.",
+    ".university",
 )
 GENERIC_JOB_BOARD_DOMAINS = (
     "linkedin.com",
@@ -361,6 +382,17 @@ def is_official_or_apply_source(url: str, title: str) -> bool:
     return has_identifiable_source and has_specific_title and (has_apply_domain or has_official_path or has_career_subdomain)
 
 
+def is_official_international_source(url: str, title: str) -> bool:
+    domain = domain_from_url(url)
+    if not domain or domain_matches(domain, BLOCKED_AUTO_NEW_DOMAINS):
+        return False
+    if is_social_or_news_source(url) or is_generic_job_board_result(url, title):
+        return False
+    if domain_matches(domain, OFFICIAL_INTERNATIONAL_DOMAINS):
+        return True
+    return any(part in domain for part in ACADEMIC_DOMAIN_PARTS) and is_official_or_apply_source(url, title)
+
+
 def is_official_career_source(url: str, title: str) -> bool:
     domain = domain_from_url(url)
     parsed = urlparse(url if "://" in url else f"https://{url}")
@@ -397,6 +429,7 @@ def hard_veto_classification(candidate: dict[str, Any], duplicate_reason: str) -
 
 def calibrate_source_classification(
     candidate: dict[str, Any],
+    destino: str,
     classificacao: str,
     prioridade: int,
     motivo: str,
@@ -409,6 +442,7 @@ def calibrate_source_classification(
     blocked_auto_new = domain_matches(domain, BLOCKED_AUTO_NEW_DOMAINS) or is_social_or_news_source(url)
     generic_board = is_generic_job_board_result(url, title)
     official_apply = is_official_or_apply_source(url, title)
+    official_international = is_official_international_source(url, title)
     official_career = is_official_career_source(url, title)
     has_fit = has_minimum_lucas_fit(candidate)
 
@@ -422,7 +456,10 @@ def calibrate_source_classification(
     if generic_board:
         return "monitorar", min(max(prioridade, 30), 50), "Resultado de agregador ou busca generica; monitorar e procurar candidatura oficial."
 
-    if official_apply and has_fit:
+    if destino == "internacional" and classificacao in {"nova", "atualizacao"} and not official_international:
+        return "monitorar", min(max(prioridade, 30), 55), "Fonte internacional nao oficial; validar edital ou pagina institucional antes de entrar no Atlas."
+
+    if official_apply and (destino != "internacional" or official_international) and has_fit:
         if classificacao in {"nova", "atualizacao"}:
             return classificacao, min(95, max(prioridade, 75)), motivo
         return "nova", min(95, max(prioridade, 75)), "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
@@ -672,11 +709,11 @@ def classify_with_rules(candidate: dict[str, Any], destino: str, duplicate_reaso
 
 
 def classify_with_openai(candidate: dict[str, Any], destino: str, duplicate_reason: str) -> tuple[str, int, str] | None:
-    import requests
-
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         return None
+
+    import requests
 
     prompt = {
         "perfil": "Lucas: Engenharia Elétrica na Unicamp, Campinas/SP, experiência em Siemens Energy e Agibank; busca melhoria contínua, processos, dados, energia, infraestrutura, data centers, consultoria e oportunidades internacionais com funding. Evitar oportunidades caras sem bolsa, comerciais genéricas, operacionais demais e programas inviáveis.",
@@ -746,7 +783,7 @@ def process_results(results: list[dict[str, str]], vagas: list[dict[str, Any]], 
         if classification is None:
             classification = classify_with_rules(candidate, destino, duplicate_reason)
         classificacao, prioridade, motivo = classification
-        classificacao, prioridade, motivo = calibrate_source_classification(candidate, classificacao, prioridade, motivo)
+        classificacao, prioridade, motivo = calibrate_source_classification(candidate, destino, classificacao, prioridade, motivo)
         apply_scores(candidate, prioridade, motivo, destino)
         processed.append(RadarResult(candidate, destino, classificacao, prioridade, motivo, duplicate_reason, duplicate_score))
     return processed
@@ -770,10 +807,15 @@ def build_history_entry(item: RadarResult, run_date: str) -> dict[str, Any]:
 
 def should_add_to_atlas(item: RadarResult) -> bool:
     url, title = source_details(item.candidate)
+    official_source = (
+        is_official_international_source(url, title)
+        if item.destino == "internacional"
+        else is_official_or_apply_source(url, title)
+    )
     return (
         item.classificacao in {"nova", "atualizacao"}
         and item.prioridade >= 65
-        and is_official_or_apply_source(url, title)
+        and official_source
         and has_minimum_lucas_fit(item.candidate)
     )
 
@@ -786,14 +828,18 @@ def generate_report(processed: list[RadarResult], errors: list[str], dry_run: bo
     for item in processed:
         counts[item.classificacao] = counts.get(item.classificacao, 0) + 1
 
+    atlas_items = [item for item in processed if should_add_to_atlas(item)]
+    atlas_new_count = sum(1 for item in atlas_items if item.classificacao == "nova")
+    atlas_update_count = sum(1 for item in atlas_items if item.classificacao == "atualizacao")
+
     lines = [
         f"# Radar de Oportunidades - {run_date}",
         "",
         f"- Modo dry-run: {'sim' if dry_run else 'não'}",
         f"- Busca real executada: {'sim' if search_executed else 'não'}",
         f"- Itens vistos: {len(processed)}",
-        f"- Novas: {counts.get('nova', 0)}",
-        f"- Atualizações: {counts.get('atualizacao', 0)}",
+        f"- Novas: {atlas_new_count}",
+        f"- Atualizações: {atlas_update_count}",
         f"- Repetidas: {counts.get('repetida', 0)}",
         f"- Monitorar: {counts.get('monitorar', 0)}",
         f"- Descartadas: {counts.get('descartada', 0)}",
@@ -824,7 +870,6 @@ def generate_report(processed: list[RadarResult], errors: list[str], dry_run: bo
                 ]
             )
 
-    atlas_items = [item for item in processed if should_add_to_atlas(item)]
     monitor_items = [
         item
         for item in processed
