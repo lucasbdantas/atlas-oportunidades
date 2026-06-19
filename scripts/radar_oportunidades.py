@@ -820,6 +820,94 @@ def should_add_to_atlas(item: RadarResult) -> bool:
     )
 
 
+def email_item_lines(item: RadarResult) -> list[str]:
+    candidate = item.candidate
+    title = candidate.get("opportunity") or candidate.get("program") or candidate.get("title")
+    url = candidate.get("applyUrl") or candidate.get("url") or candidate.get("companyUrl")
+    return [
+        f"* {title}",
+        f"  * Destino: {item.destino}",
+        f"  * Prioridade: {item.prioridade}",
+        f"  * Motivo: {item.motivo}",
+        f"  * Link: {url}",
+        "",
+    ]
+
+
+def monitor_email_quality(item: RadarResult) -> tuple[int, int, int, int]:
+    url, title = source_details(item.candidate)
+    blocked_source = is_hard_veto_domain(url) or is_social_or_news_source(url) or is_generic_job_board_result(url, title)
+    official_source = (
+        is_official_international_source(url, title)
+        if item.destino == "internacional"
+        else is_official_or_apply_source(url, title)
+    )
+    specific_source = int(any(term in source_text(f"{title} {url}") for term in SPECIFIC_OPPORTUNITY_TERMS))
+    return (int(not blocked_source), int(official_source), specific_source, item.prioridade)
+
+
+def useful_monitor_items(processed: list[RadarResult], limit: int = 8) -> list[RadarResult]:
+    monitor_items = [item for item in processed if item.classificacao == "monitorar"]
+    preferred = [item for item in monitor_items if monitor_email_quality(item)[0]]
+    source = preferred or monitor_items
+    return sorted(source, key=monitor_email_quality, reverse=True)[:limit]
+
+
+def generate_email_summary(
+    processed: list[RadarResult],
+    report_path: Path,
+    run_date: str,
+    search_executed: bool,
+) -> str:
+    atlas_items = [item for item in processed if should_add_to_atlas(item)]
+    new_items = [item for item in atlas_items if item.classificacao == "nova"]
+    watch_items = useful_monitor_items(processed)
+    repeated_count = sum(1 for item in processed if item.classificacao == "repetida")
+    discarded_count = sum(1 for item in processed if item.classificacao == "descartada")
+    try:
+        report_relative = report_path.resolve().relative_to(ROOT).as_posix()
+    except ValueError:
+        report_relative = report_path.as_posix()
+
+    lines = [
+        f"# Radar de Oportunidades - {run_date}",
+        "",
+        "Resumo:",
+        "",
+        f"* Busca real: {'sim' if search_executed else 'não'}",
+        f"* Novas adicionadas ao Atlas: {len(new_items)}",
+        f"* Para olhar hoje: {len(watch_items)}",
+        f"* Repetidas ignoradas: {repeated_count}",
+        f"* Descartadas: {discarded_count}",
+        "",
+        "## Novas adicionadas ao Atlas",
+        "",
+    ]
+
+    if new_items:
+        for item in sorted(new_items, key=lambda entry: entry.prioridade, reverse=True)[:5]:
+            lines.extend(email_item_lines(item))
+    else:
+        lines.extend(["Nenhuma oportunidade nova foi adicionada automaticamente hoje.", ""])
+
+    lines.extend(["## Para olhar hoje", ""])
+    if watch_items:
+        for item in watch_items:
+            lines.extend(email_item_lines(item))
+    else:
+        lines.extend(["Nenhuma fonte de monitoramento relevante para priorizar hoje.", ""])
+
+    lines.extend(
+        [
+            "## Relatório completo",
+            "",
+            f"O relatório completo foi salvo no repositório em {report_relative}.",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
 def generate_report(processed: list[RadarResult], errors: list[str], dry_run: bool, search_executed: bool, run_date: str) -> tuple[Path, str]:
     REPORTS_DIR.mkdir(exist_ok=True)
     report_path = REPORTS_DIR / f"radar_{run_date}.md"
@@ -936,20 +1024,25 @@ def main() -> int:
             descartes.extend(new_descartes)
             write_json(DESCARTES_PATH, descartes)
 
-    report_path, report_content = generate_report(
+    report_path, _ = generate_report(
         processed=processed,
         errors=errors,
         dry_run=dry_run,
         search_executed=bool(os.getenv("SEARCH_API_KEY")),
         run_date=run_date,
     )
+    email_summary = generate_email_summary(
+        processed=processed,
+        report_path=report_path,
+        run_date=run_date,
+        search_executed=bool(os.getenv("SEARCH_API_KEY")),
+    )
 
     email_sent = False
     if smtp_configured():
         email_sent = send_report(
             subject=f"Radar Atlas de Oportunidades - {run_date}",
-            body=report_content,
-            report_path=report_path,
+            body=email_summary,
         )
 
     print(f"Relatório: {report_path}")
