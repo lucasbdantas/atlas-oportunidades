@@ -1,0 +1,101 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Painel de Trainees em Energia - Lucas Dantas</title>
+<style>
+:root{--bg:#eef4fa;--paper:#fff;--ink:#0f172a;--muted:#64748b;--line:#d8e2ee;--dark:#0b1220;--green:#16a34a;--blue:#2563eb;--amber:#d97706;--red:#dc2626;--violet:#7c3aed;--greenSoft:#ecfdf5;--blueSoft:#eff6ff;--amberSoft:#fffbeb;--redSoft:#fef2f2;--violetSoft:#f5f3ff;--shadow:0 18px 48px rgba(15,23,42,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:radial-gradient(circle at top left,#fff7ed 0,var(--bg) 36rem)}button,input,select{font:inherit}.app{max-width:1500px;margin:0 auto;padding:28px}.hero{background:linear-gradient(135deg,#06120d,#111827 58%,#251605);color:white;border-radius:34px;padding:34px;box-shadow:var(--shadow);overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:460px;height:460px;right:-120px;top:-180px;background:rgba(22,163,74,.22);border-radius:50%;filter:blur(14px)}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;position:relative;z-index:1}.eyebrow{color:#bbf7d0;font-weight:950;text-transform:uppercase;letter-spacing:.2em;font-size:12px;margin-bottom:12px}h1{margin:0;font-size:clamp(34px,5vw,60px);line-height:.98;letter-spacing:-.055em}h2{margin:0;font-size:28px;letter-spacing:-.035em}h3{margin:0;font-size:20px;letter-spacing:-.025em}p{line-height:1.55}.hero p{color:#d1d5db;max-width:950px;font-size:16px}.hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:20px;backdrop-filter:blur(8px)}.hero-card strong{display:block;margin-bottom:8px}.hero-card span{color:#dbe4ee;font-size:13px;line-height:1.45}.nav{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}.nav a,.btn{border:1px solid var(--line);border-radius:999px;background:white;color:var(--ink);padding:10px 14px;font-size:13px;font-weight:850;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}.nav a{color:white;border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.08)}.section{margin-top:28px;padding:26px;background:rgba(255,255,255,.95);border:1px solid var(--line);border-radius:30px;box-shadow:var(--shadow)}.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;margin-bottom:20px}.sub{color:var(--muted);font-size:14px;margin:8px 0 0;line-height:1.5;max-width:1060px}.grid{display:grid;gap:16px}.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.metric{background:white;border:1px solid var(--line);border-radius:22px;padding:18px;min-height:112px}.metric .label{color:var(--muted);text-transform:uppercase;font-size:11px;letter-spacing:.08em;font-weight:950}.metric .value{font-size:30px;font-weight:950;letter-spacing:-.04em;margin-top:8px}.metric .hint{color:var(--muted);font-size:13px;line-height:1.35}.filters{display:flex;flex-wrap:wrap;gap:10px}select,input[type=search]{border:1px solid var(--line);border-radius:999px;background:#fff;padding:10px 14px;font-size:14px;color:var(--ink);outline:none;min-width:190px}.callout{border:1px solid #bbf7d0;background:var(--greenSoft);border-radius:24px;padding:20px}.callout.warn{border-color:#fed7aa;background:var(--amberSoft)}.tag{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:12px;font-weight:900;background:white;white-space:nowrap}.tag.green{background:var(--greenSoft);color:#166534;border-color:#bbf7d0}.tag.blue{background:var(--blueSoft);color:#1d4ed8;border-color:#bfdbfe}.tag.amber{background:var(--amberSoft);color:#92400e;border-color:#fed7aa}.tag.red{background:var(--redSoft);color:#991b1b;border-color:#fecaca}.tag.violet{background:var(--violetSoft);color:#5b21b6;border-color:#ddd6fe}.company{background:white;border:1px solid var(--line);border-radius:22px;padding:18px;min-height:410px;position:relative;overflow:hidden}.company:before{content:"";position:absolute;left:0;top:0;width:8px;height:100%;background:var(--green)}.company[data-tier="2"]:before{background:var(--blue)}.company[data-tier="3"]:before{background:var(--violet)}.company[data-tier="4"]:before{background:var(--amber)}.company[data-tier="0"]:before{background:var(--red)}.company-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.score{background:#111827;color:#fff;border-radius:999px;padding:8px 10px;font-size:13px;font-weight:950;min-width:48px;text-align:center}.company p{font-size:13px;color:#334155;margin:10px 0;line-height:1.45}.score-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0}.box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:10px}.box small{display:block;color:var(--muted);font-size:10px;font-weight:950;text-transform:uppercase;letter-spacing:.04em}.box b{font-size:20px;letter-spacing:-.04em}.pills{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.bars{display:grid;gap:8px;margin-top:12px}.bar-row{display:grid;grid-template-columns:96px 1fr 30px;gap:8px;align-items:center;font-size:11px;color:var(--muted);font-weight:900}.bar{height:8px;border-radius:999px;background:#e2e8f0;overflow:hidden}.bar span{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--amber),var(--green))}.bar.risk span{background:linear-gradient(90deg,var(--green),var(--red))}.tier{border:1px solid var(--line);border-radius:24px;padding:20px;background:white}.timeline{border-left:5px solid var(--green);background:white;border-radius:22px;border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px}.timeline[data-tone="blue"]{border-left-color:var(--blue)}.timeline[data-tone="amber"]{border-left-color:var(--amber)}.timeline[data-tone="violet"]{border-left-color:var(--violet)}.timeline ul,.action ul{margin:12px 0 0;padding-left:20px;color:#334155;font-size:14px;line-height:1.55}.action,.radar-card{background:white;border:1px solid var(--line);border-radius:24px;padding:20px}.radar-card h3{font-size:18px}.radar-card a{color:#1d4ed8;font-weight:850;text-decoration:none}.compare{width:100%;border-collapse:collapse;font-size:13px;overflow:hidden;border-radius:20px}.compare th,.compare td{text-align:left;padding:12px;border-bottom:1px solid #e2e8f0;vertical-align:top}.compare th{font-size:11px;color:#475569;text-transform:uppercase;letter-spacing:.06em;background:#f8fafc;position:sticky;top:0}.load-error{border:2px solid #dc2626;background:#fef2f2;color:#991b1b;border-radius:18px;padding:16px;margin-top:18px}.footer{color:var(--muted);font-size:12px;line-height:1.5;padding:24px 4px}@media(max-width:1100px){.hero-grid,.grid-4,.grid-3,.grid-2{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.score-grid{grid-template-columns:repeat(2,1fr)}}@media print{body{background:#fff}.nav,.filters,.btn{display:none}.section,.hero{box-shadow:none;break-inside:avoid}.app{max-width:none;padding:0}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="hero">
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Carreira em energia · trainees 2027-2028</div>
+<h1>Mapa operacional de trainees para depois da Serena</h1>
+<p>O painel agora é alimentado por <b>data/trainees.json</b>, sincronizado com o radar diário do Atlas. A régua estratégica fica estável; os sinais recentes entram automaticamente quando o workflow encontra programas, graduates ou vagas entry-level relevantes.</p>
+<nav class="nav"><a href="#visao">Visão</a><a href="#ranking">Ranking</a><a href="#radar">Radar</a><a href="#calendario">Calendário</a><a href="#acoes">Ações</a><a href="index.html">Voltar ao atlas</a></nav>
+</div>
+<div class="hero-card"><strong>Insight central</strong><span>Março de 2027 não deve ser tratado como a grande janela. Para graduação em julho de 2027, a onda principal tende a ser segundo semestre de 2027 e início de 2028. O foco agora é construir repertório na Serena.</span></div>
+</div>
+<div id="loadNotice"></div>
+</header>
+
+<section class="section" id="visao">
+<div class="grid grid-4">
+<div class="metric"><div class="label">Alvos monitorados</div><div class="value" id="mTotal">--</div><div class="hint">empresas e grupos de oportunidade no radar.</div></div>
+<div class="metric"><div class="label">Com sinais recentes</div><div class="value" id="mRadar">--</div><div class="hint">vindos de vagas.json e historico_radar.json.</div></div>
+<div class="metric"><div class="label">Top score</div><div class="value" id="mBest">--</div><div class="hint">maior prioridade estratégica atual.</div></div>
+<div class="metric"><div class="label">Última sincronização</div><div class="value" id="mUpdated">--</div><div class="hint">data registrada em data/trainees.json.</div></div>
+</div>
+</section>
+
+<section class="section">
+<div class="grid grid-2">
+<div class="callout"><h3>Leitura estratégica</h3><p>O objetivo não é sair aplicando agora por ansiedade. É chegar em julho de 2027 com uma narrativa clara: Engenharia Elétrica na Unicamp, Serena Energia, desenvolvimento de projetos, transição energética, análise técnico-comercial e maturidade para infraestrutura.</p></div>
+<div class="callout warn"><h3>Regra de uso</h3><p>Use este painel como mapa vivo. Trainee formal é uma rota; vaga júnior boa em energia também pode ser excelente. O próximo passo depois da Serena talvez seja mais específico do que um programa generalista.</p></div>
+</div>
+</section>
+
+<section class="section" id="ranking">
+<div class="section-head"><div><h2>1. Ranking com score</h2><p class="sub">Score interpretativo de 0 a 100, ponderando fit energia, marca, localização, internacional, timing, risco e tipo de formação.</p></div><div class="filters"><input id="search" type="search" placeholder="Buscar empresa, tier, timing..."/><select id="tierFilter"><option value="Todos">Todos os tiers</option><option value="1">Tier 1</option><option value="2">Tier 2</option><option value="3">Tier 3</option><option value="4">Tier 4</option><option value="0">Despriorizar</option></select><select id="formationFilter"><option value="Todos">Todos os perfis</option><option>Especialista</option><option>Executivo</option><option>Hibrido</option><option>Monitoramento</option></select><select id="radarFilter"><option value="Todos">Todo radar</option><option value="com-sinais">Com sinais</option><option value="sem-sinais">Sem sinais</option></select></div></div>
+<div class="grid grid-3" id="cards"></div>
+</section>
+
+<section class="section" id="radar">
+<div class="section-head"><div><h2>2. Sinais recentes do radar</h2><p class="sub">Entradas detectadas automaticamente nos dados do Atlas. Quando o workflow diário encontra trainee/graduate/entry-level, aparece aqui.</p></div></div>
+<div class="grid grid-3" id="radarCards"></div>
+</section>
+
+<section class="section" id="calendario">
+<div class="section-head"><div><h2>3. Calendário operacional</h2><p class="sub">O relatório muda a ansiedade: o trabalho forte começa agora, mas a maioria das aplicações boas vem depois.</p></div></div>
+<div class="grid grid-4">
+<div class="timeline"><h3>Agora até dez/2026</h3><ul><li>Monitorar páginas oficiais sem obsessão.</li><li>Construir evidências na Serena.</li><li>Mapear 2-3 projetos que possam virar história de entrevista.</li></ul></div>
+<div class="timeline" data-tone="blue"><h3>Mai-jun/2027</h3><ul><li>Observar Vale Engenharia como exceção possível antes da formatura.</li><li>Preparar CV energia/infraestrutura.</li><li>Fechar narrativa Serena.</li></ul></div>
+<div class="timeline" data-tone="amber"><h3>Jul-out/2027</h3><ul><li>Janela principal: Hitachi, Neoenergia, Eletrobras/Axia, Itaú e possivelmente ISA.</li><li>Aplicar com força nos Tier 1 abertos.</li></ul></div>
+<div class="timeline" data-tone="violet"><h3>Jan-abr/2028</h3><ul><li>TAESA em fevereiro, EDP em março, Eneva/ISA se repetirem cadência.</li><li>Entry-level em Siemens/Engie/CPFL como plano paralelo.</li></ul></div>
+</div>
+</section>
+
+<section class="section" id="acoes">
+<div class="section-head"><div><h2>4. Plano de ação para Serena virar prova</h2><p class="sub">Coisas que tornam seu CV mais forte antes de qualquer inscrição.</p></div></div>
+<div class="grid grid-3">
+<div class="action"><h3>Repertório técnico-comercial</h3><ul><li>Entender PPAs, ACL, conexão, licenciamento, CAPEX/OPEX e viabilidade.</li><li>Guardar exemplos concretos de análise, processo ou decisão.</li><li>Montar glossário pessoal de energia.</li></ul></div>
+<div class="action"><h3>Narrativa de entrevista</h3><ul><li>Escrever a ponte Agibank → Serena → energia/infraestrutura.</li><li>Preparar 5 histórias STAR com impacto, conflito, aprendizado e dado.</li><li>Separar uma história técnica e uma história de negócio.</li></ul></div>
+<div class="action"><h3>Monitoramento leve</h3><ul><li>Deixar o workflow diário capturar sinais.</li><li>Salvar páginas oficiais e ciclos anteriores.</li><li>Não tratar ausência de edital em março/2027 como atraso.</li></ul></div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-head"><div><h2>5. Tabela fria</h2><p class="sub">Versão compacta para copiar para planilha, Notion ou Lucas OS depois.</p></div></div>
+<div style="overflow:auto;max-height:720px;border:1px solid var(--line);border-radius:20px"><table class="compare" id="table"><thead><tr><th>Empresa</th><th>Tier</th><th>Score</th><th>Timing</th><th>Formação</th><th>Radar</th><th>Leitura</th><th>Ação</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<section class="footer">Fonte viva: <b>data/trainees.json</b>, sincronizado por <b>scripts/sync_trainees.py</b> no workflow <b>radar-diario.yml</b>. Pontuações são ferramenta de decisão, não previsão de aprovação. Antes de aplicar, validar edital, elegibilidade, cidade, trilha e data oficial.</section>
+</div>
+<script>
+const fallbackPayload={schemaVersion:1,updatedAt:"fallback",targets:[]};
+let payload=fallbackPayload, targets=[];
+const tierLabel={0:"Despriorizar",1:"Tier 1",2:"Tier 2",3:"Tier 3",4:"Tier 4"};
+const tierClass={0:"red",1:"green",2:"blue",3:"violet",4:"amber"};
+function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function n(v){const value=Number(v);return Number.isFinite(value)?value:0}
+function bar(label,value,risk=false){const width=Math.max(0,Math.min(100,n(value)));return `<div class="bar-row"><span>${esc(label)}</span><div class="bar ${risk?'risk':''}"><span style="width:${width}%"></span></div><b>${Math.round(width)}</b></div>`}
+function normalizePayload(data){if(Array.isArray(data))return{schemaVersion:1,updatedAt:"manual",targets:data};if(data&&Array.isArray(data.targets))return data;throw new Error("data/trainees.json sem lista targets")}
+function matchesFilters(item){const q=document.getElementById("search").value.toLowerCase().trim(),tier=document.getElementById("tierFilter").value,form=document.getElementById("formationFilter").value,radar=document.getElementById("radarFilter").value,hasSignals=n(item.radarCount)>0;const hay=[item.name,item.window,item.read,item.action,item.formationType,tierLabel[item.tier],item.radarStatus,...(item.tags||[])].join(" ").toLowerCase();return(tier==="Todos"||String(item.tier)===tier)&&(form==="Todos"||item.formationType===form)&&(radar==="Todos"||(radar==="com-sinais"&&hasSignals)||(radar==="sem-sinais"&&!hasSignals))&&(!q||hay.includes(q))}
+function filtered(){return targets.filter(matchesFilters).sort((a,b)=>n(b.score)-n(a.score))}
+function tag(label,cls=""){return `<span class="tag ${cls}">${esc(label)}</span>`}
+function renderMetrics(){const withSignals=targets.filter(t=>n(t.radarCount)>0),best=[...targets].sort((a,b)=>n(b.score)-n(a.score))[0];document.getElementById("mTotal").textContent=targets.length;document.getElementById("mRadar").textContent=withSignals.length;document.getElementById("mBest").textContent=best?best.name.split(" ")[0]:"--";document.getElementById("mUpdated").textContent=payload.updatedAt||"--"}
+function renderCards(){document.getElementById("cards").innerHTML=filtered().map(c=>`<article class="company" data-tier="${esc(c.tier)}"><div class="company-top"><div><h3>${esc(c.name)}</h3><div class="pills">${tag(tierLabel[c.tier]||`Tier ${c.tier}`,tierClass[c.tier])}${tag(c.formationType||"A confirmar")}${tag(c.radarStatus||"Monitorar",n(c.radarCount)>0?"green":"amber")}</div></div><div class="score">${n(c.score)}</div></div><p><strong>Janela:</strong> ${esc(c.window)}</p><p>${esc(c.read)}</p><p><strong>Ação:</strong> ${esc(c.action)}</p><div class="score-grid"><div class="box"><small>Energia</small><b>${n(c.energyFit)}</b></div><div class="box"><small>Marca</small><b>${n(c.brandFit)}</b></div><div class="box"><small>Timing</small><b>${n(c.timingFit)}</b></div><div class="box"><small>Radar</small><b>${n(c.radarCount)}</b></div></div><div class="pills">${(c.tags||[]).map(t=>tag(t)).join("")}</div><div class="bars">${bar("Energia",c.energyFit)}${bar("Marca",c.brandFit)}${bar("Local",c.locationFit)}${bar("Internac.",c.internationalFit)}${bar("Timing",c.timingFit)}${bar("Risco",c.risk,true)}</div></article>`).join("")||'<p class="sub">Nenhum alvo encontrado com os filtros atuais.</p>'}
+function renderRadar(){const items=targets.filter(t=>n(t.radarCount)>0).sort((a,b)=>n(b.score)-n(a.score));document.getElementById("radarCards").innerHTML=items.length?items.map(t=>`<article class="radar-card"><div class="pills">${tag(t.name,"green")}${tag(`${n(t.radarCount)} sinais`)}</div><h3>${esc(t.name)}</h3>${(t.radarMatches||[]).slice(0,4).map(m=>`<p><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.title||m.company||"Abrir sinal")}</a><br><span class="sub">${esc(m.sourceDomain||m.source)} · prioridade ${esc(m.priority||"--")} ${m.date?`· ${esc(m.date)}`:""}</span></p>`).join("")}</article>`).join(""):'<div class="callout warn"><h3>Nenhum sinal recente ainda</h3><p>O sync está funcionando, mas os dados atuais ainda não trouxeram resultados com trainee/graduate/entry-level para os alvos. Quando o radar diário encontrar, esta seção preenche automaticamente.</p></div>'}
+function renderTable(){document.querySelector("#table tbody").innerHTML=filtered().map(c=>`<tr><td><b>${esc(c.name)}</b></td><td>${esc(tierLabel[c.tier]||c.tier)}</td><td><b>${n(c.score)}</b></td><td>${esc(c.window)}</td><td>${esc(c.formationType)}</td><td>${esc(c.radarStatus||"Monitorar")} (${n(c.radarCount)})</td><td>${esc(c.read)}</td><td>${esc(c.action)}</td></tr>`).join("")}
+function render(){renderMetrics();renderCards();renderRadar();renderTable()}
+async function loadData(){try{const res=await fetch("data/trainees.json",{cache:"no-store"});if(!res.ok)throw new Error(`HTTP ${res.status}`);payload=normalizePayload(await res.json());targets=payload.targets||[];}catch(err){document.getElementById("loadNotice").innerHTML=`<div class="load-error"><b>Dados vivos não carregaram.</b> Abra via GitHub Pages ou rode <code>python -m http.server 8000</code>. Erro: <code>${esc(err.message||err)}</code></div>`;payload=fallbackPayload;targets=[];}render()}
+["search","tierFilter","formationFilter","radarFilter"].forEach(id=>document.getElementById(id).addEventListener("input",render));
+loadData();
+</script>
+</body>
+</html>

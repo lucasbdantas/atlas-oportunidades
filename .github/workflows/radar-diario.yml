@@ -44,6 +44,10 @@ jobs:
           SMTP_TO: ${{ secrets.SMTP_TO }}
         run: python scripts/radar_oportunidades.py
 
+      - name: Sync trainee panel data
+        if: ${{ github.event.inputs.dry_run != '1' }}
+        run: python scripts/sync_trainees.py
+
       - name: Commit radar updates
         if: ${{ github.event.inputs.dry_run != '1' }}
         uses: stefanzweifel/git-auto-commit-action@v5

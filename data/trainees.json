@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-08",
+  "sourceFiles": [
+    "data/vagas.json",
+    "data/historico_radar.json"
+  ],
+  "monitoringQueries": [
+    "trainee energia 2027 Brasil",
+    "programa trainee Hitachi Energy Brasil",
+    "programa trainee Neoenergia Iberdrola",
+    "EDP global graduate Brasil",
+    "trainee Eletrobras Axia Energia",
+    "trainee ISA Energia Brasil",
+    "trainee TAESA",
+    "Siemens Energy entry level Brasil",
+    "Itau BBA trainee infraestrutura energia"
+  ],
+  "targets": [
+    {
+      "id": "hitachi-energy",
+      "name": "Hitachi Energy",
+      "tier": "1",
+      "score": 94,
+      "energyFit": 100,
+      "brandFit": 92,
+      "locationFit": 92,
+      "internationalFit": 88,
+      "timingFit": 90,
+      "risk": 12,
+      "formationType": "Especialista",
+      "window": "Jul-ago/2027",
+      "priority": "Aplicar com forca",
+      "read": "Encaixe muito limpo: grid, potencia, engenharia, Guarulhos/SP e possibilidade internacional.",
+      "action": "Aplicar com forca; construir historia Serena ligada a projetos, rede, conexao e transicao energetica.",
+      "aliases": [
+        "hitachi energy",
+        "hitachi"
+      ],
+      "tags": [
+        "energia",
+        "grid",
+        "internacional",
+        "SP"
+      ],
+      "radarMatches": [],
+      "radarCount": 0,
+      "lastSeenAt": "",
+      "radarStatus": "Monitorar"
+    },
+    {
+      "id": "neoenergia",
+      "name": "Neoenergia",
+      "tier": "1",
+      "score": 93,
+      "energyFit": 96,
+      "brandFit": 92,
+      "locationFit": 88,
+      "internationalFit": 92,
+      "timingFit": 86,
+      "risk": 10,
+      "formationType": "Hibrido",
+      "window": "2o semestre/2027",
+      "priority": "Aplicar com forca",
+      "read": "Energia grande, Iberdrola, internacional, geracao, transmissao, distribuicao e trading.",
+      "action": "Aplicar forte; vender perfil engenharia + energia + dados/processos.",
+      "aliases": [
+        "neoenergia",
+        "iberdrola"
+      ],
+      "tags": [
+        "energia",
+        "Iberdrola",
+        "gestao",
+        "internacional"
+      ],
+      "radarMatches": [],
+      "radarCount": 0,
+      "lastSeenAt": "",
+      "radarStatus": "Monitorar"
+    },
+    {
+      "id": "edp",
+      "name": "EDP",
+      "tier": "1",
+      "score": 92,
+      "energyFit": 96,
+      "brandFit": 94,
+      "locationFit": 82,
+      "internationalFit": 96,
+      "timingFit": 74,
+      "risk": 8,
+      "formationType": "Executivo",
+      "window": "Mar/2028",
+      "priority": "Manter quente",
+      "read": "Energia global, transicao e rotacao internacional. Timing pesa contra 2027, nao contra a tese.",
+      "action": "Manter quente desde ja; preparar candidatura longa para 2028.",
+      "aliases": [
+        "edp",
+        "edp brasil",
+        "edp global"
+      ],
+      "tags": [
+        "energia",
+        "global",
+        "transicao",
+        "executivo"
+      ],
+      "radarMatches": [],
+      "radarCount": 0,
+      "lastSeenAt": "",
+      "radarStatus": "Monitorar"
+    },
+    {
+      "id": "isa-energia",
+      "name": "ISA Energia Brasil",
+      "tier": "1",
+      "score": 90,
+      "energyFit": 98,
+      "brandFit": 86,
+      "locationFit": 90,
+      "internationalFit": 72,
+      "timingFit": 78,
+      "risk": 11,
+      "formationType": "Especialista",
+      "window": "Fim/2027 ou inicio/2028",
+      "priority": "Aplicar com forca",
+      "read": "Transmissao pura e seria. Puxa para infraestrutura, engenharia e sistema eletrico real.",
+      "action": "Aplicar forte se abrir; narrativa Serena + transmissao/conexao fica muito coerente.",
+      "aliases": [
+        "isa energia",
+        "isa cteep",
+        "cteep"
+      ],
+      "tags": [
+        "transmissao",
+        "SP",
+        "infraestrutura"
+      ],
+      "radarMatches": [],
+      "radarCount": 0,
+      "lastSeenAt": "",
+      "radarStatus": "Monitorar"
+    },
+    {
+      "id": "eletrobras-axia",
+      "name": "Eletrobras/Axia",
+      "tier": "1",
+      "score": 89,
+      "energyFit": 98,
+      "brandFit": 96,
+      "locationFit": 78,
+      "internationalFit": 62,
+      "timingFit": 86,
+      "risk": 24,
+      "formationType": "Hibrido",
+      "window": "Set-out/2027",
+      "priority": "Aplicar com forca",
+      "read": "Marca local enorme e infraestrutura pesada. Risco maior que utilities mais estaveis, mas segue Tier 1.",
+      "action": "Aplicar forte; enfatizar interesse por sistema eletrico, ativos e transformacao pos-privatizacao.",
+      "aliases": [
+        "eletrobras",
+        "axia energia",
+        "axia"
+      ],
+      "tags": [
+        "energia",
+        "marca",
+        "infraestrutura"
+      ],
+      "radarMatches": [],
+      "radarCount": 0,
+      "lastSeenAt": "",
+      "radarStatus": "Monitorar"
+    },
+    {
+      "id": "taesa",
+      "name": "TAESA",
+      "tier": "1",
+      "score": 87,
+      "energyFit": 97,
+      "brandFit": 84,
+      "locationFit": 82,
+      "internationalFit": 58,
+      "timingFit": 80,
+      "risk": 12,
+      "formationType": "Especialista",
+      "window": "Fev/2028",
+      "priority": "Aplicar com forca",
+      "read": "Excelente para transmissao, regulacao e operacao. Mais especialista do que executivo.",
+      "action": "Aplicar forte em 2028; preparar historia tecnica e regulatoria.",
+      "aliases": [
+        "taesa"
+      ],
+      "tags": [
+        "transmissao",
+        "RJ",
+        "especialista"
+      ],
+      "radarMatches": [],
+      "radarCount": 0,
+      "lastSeenAt": "",
+      "radarStatus": "Monitorar"
+    },
+    {
+      "id": "vale-engenharia",
+      "name": "Vale Engenharia",
+      "tier": "2",
+      "score": 80,
+      "energyFit": 58,
+      "brandFit": 94,
+      "locationFit": 82,
+      "internationalFit": 72,
+      "timingFit": 84,
+      "risk": 18,
+      "formationType": "Especialista",
+      "window": "Mai-jun/2027",
+      "priority": "Aplicar se elegivel",
+      "read": "Melhor excecao antes da formatura. Nao e energia, mas e infraestrutura pesada e marca forte.",
+      "action": "Monitorar com atencao em 2027; aplicar se aceitar formandos de julho.",
+      "aliases": [
+        "vale",
+        "vale engenharia"
+      ],
+      "tags": [
+        "mineracao",
+        "engenharia",
+        "early"
+      ],
+      "radarMatches": [],
+      "radarCount": 0,
+      "lastSeenAt": "",
+      "radarStatus": "Monitorar"
+    },
+    {
+      "id": "siemens-energy",
+      "name": "Siemens Energy",
+      "tier": "2",
+      "score": 79,
+      "energyFit": 94,
+      "brandFit": 91,
+      "locationFit": 78,
+      "internationalFit": 86,
+      "timingFit": 48,
+      "risk": 18,
+      "formationType": "Especialista",
+      "window": "Entry-level continuo",
+      "priority": "Monitorar entry-level",
+      "read": "Graduate formal pode pedir master/PhD, mas a empresa faz sentido para vagas junior, aplicacao, subestacoes e digital grid.",
+      "action": "Nao tratar como trainee principal; monitorar entry-level e estagio final.",
+      "aliases": [
+        "siemens energy"
+      ],
+      "tags": [
+        "energia",
+        "digital grid",
+        "entry-level"
+      ],
+      "radarMatches": [],
+      "radarCount": 0,
+      "lastSeenAt": "",
+      "radarStatus": "Monitorar"
+    },
+    {
+      "id": "engie-cpfl-equatorial",
+      "name": "Engie / CPFL / Equatorial",
+      "tier": "2",
+      "score": 76,
+      "energyFit": 90,
+      "brandFit": 82,
+      "locationFit": 76,
+      "internationalFit": 60,
+      "timingFit": 60,
+      "risk": 20,
+      "formationType": "Monitoramento",
+      "window": "Monitorar vagas",
+      "priority": "Monitorar vagas junior",
+      "read": "Talvez a melhor oportunidade aqui nao seja trainee, e sim vaga junior boa em energia.",
+      "action": "Criar alerta de vagas junior; filtrar por engenharia, dados, projetos, regulacao ou mercado.",
+      "aliases": [
+        "engie",
+        "cpfl",
+        "equatorial"
+      ],
+      "tags": [
+        "monitoramento",
+        "energia",
+        "junior"
+      ],
+      "radarMatches": [],
+      "radarCount": 0,
+      "lastSeenAt": "",
+      "radarStatus": "Monitorar"
+    },
+    {
+      "id": "eneva",
+      "name": "Eneva",
+      "tier": "2",
+      "score": 72,
+      "energyFit": 88,
+      "brandFit": 76,
+      "locationFit": 46,
+      "internationalFit": 45,
+      "timingFit": 68,
+      "risk": 28,
+      "formationType": "Especialista",
+      "window": "2028 se repetir",
+      "priority": "Seletivo",
+      "read": "Energia real, mas geografia e alocacao podem pesar contra sua preferencia.",
+      "action": "Aplicar so se trilha/local fizerem sentido.",
+      "aliases": [
+        "eneva"
+      ],
+      "tags": [
+        "energia",
+        "gas",
+        "localizacao"
+      ],
+      "radarMatches": [],
+      "radarCount": 0,
+      "lastSeenAt": "",
+      "radarStatus": "Monitorar"
+    },
+    {
+      "id": "itau-bba",
+      "name": "Itau / Itau BBA",
+      "tier": "3",
+      "score": 75,
+      "energyFit": 38,
+      "brandFit": 96,
+      "locationFit": 92,
+      "internationalFit": 55,
+      "timingFit": 88,
+      "risk": 22,
+      "formationType": "Executivo",
+      "window": "2o semestre/2027",
+      "priority": "Ponte de negocio",
+      "read": "Fallback inteligente de negocio, principalmente para infra, project finance, corporate, M&A ou energia.",
+      "action": "Aplicar se conseguir posicionar para areas com ponte clara para energia/infraestrutura.",
+      "aliases": [
+        "itau",
+        "itau bba",
+        "itaú",
+        "itaú bba"
+      ],
+      "tags": [
+        "negocio",
+        "infra",
+        "finance"
+      ],
+      "radarMatches": [],
+      "radarCount": 0,
+      "lastSeenAt": "",
+      "radarStatus": "Monitorar"
+    },
+    {
+      "id": "btg-santander-safra",
+      "name": "BTG / Santander / Safra",
+      "tier": "3",
+      "score": 68,
+      "energyFit": 32,
+      "brandFit": 86,
+      "locationFit": 86,
+      "internationalFit": 48,
+      "timingFit": 70,
+      "risk": 30,
+      "formationType": "Executivo",
+      "window": "2o semestre/2027",
+      "priority": "Seletivo",
+      "read": "Opcao de negocio, mas o risco de virar financas genericas e maior.",
+      "action": "So priorizar trilhas de corporate, project finance, energia, infraestrutura ou M&A.",
+      "aliases": [
+        "btg",
+        "santander",
+        "safra"
+      ],
+      "tags": [
+        "negocio",
+        "finance"
+      ],
+      "radarMatches": [],
+      "radarCount": 0,
+      "lastSeenAt": "",
+      "radarStatus": "Monitorar"
+    },
+    {
+      "id": "nestle-suzano-ambev",
+      "name": "Nestle / Suzano / Ambev",
+      "tier": "4",
+      "score": 60,
+      "energyFit": 18,
+      "brandFit": 88,
+      "locationFit": 78,
+      "internationalFit": 58,
+      "timingFit": 74,
+      "risk": 34,
+      "formationType": "Executivo",
+      "window": "2o semestre/2027",
+      "priority": "Plano C",
+      "read": "Boa marca e formacao generalista, mas baixa coerencia com Serena e energia.",
+      "action": "Usar como plano C se quiser abrir para general management.",
+      "aliases": [
+        "nestle",
+        "nestlé",
+        "suzano",
+        "ambev"
+      ],
+      "tags": [
+        "general management",
+        "marca"
+      ],
+      "radarMatches": [],
+      "radarCount": 0,
+      "lastSeenAt": "",
+      "radarStatus": "Monitorar"
+    },
+    {
+      "id": "raizen",
+      "name": "Raizen",
+      "tier": "0",
+      "score": 38,
+      "energyFit": 72,
+      "brandFit": 70,
+      "locationFit": 74,
+      "internationalFit": 40,
+      "timingFit": 60,
+      "risk": 76,
+      "formationType": "Monitoramento",
+      "window": "Despriorizar",
+      "priority": "Despriorizar",
+      "read": "Nao e 'acabou', mas reestruturacao extrajudicial pesada basta para despriorizar inicio de carreira.",
+      "action": "So considerar se a vaga for excepcional e o risco fizer sentido.",
+      "aliases": [
+        "raizen",
+        "raízen"
+      ],
+      "tags": [
+        "risco",
+        "despriorizar"
+      ],
+      "radarMatches": [],
+      "radarCount": 0,
+      "lastSeenAt": "",
+      "radarStatus": "Monitorar"
+    }
+  ]
+}
