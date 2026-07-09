@@ -106,6 +106,12 @@ def candidate_to_match(item: dict[str, Any], source_type: str) -> dict[str, Any]
         "reason": item.get("reason") or item.get("why") or item.get("motivo") or "",
     }
 
+def match_key(match: dict[str, Any]) -> str:
+    url = str(match.get("url") or "").strip().casefold()
+    if url:
+        return url.rstrip("/")
+    return normalize(f"{match.get('company', '')} {match.get('title', '')}")
+
 def collect_matches(target: dict[str, Any], vagas: list[dict[str, Any]], historico: list[dict[str, Any]]) -> list[dict[str, Any]]:
     matches: list[dict[str, Any]] = []
     seen: set[str] = set()
@@ -113,8 +119,10 @@ def collect_matches(target: dict[str, Any], vagas: list[dict[str, Any]], histori
         for item in items:
             if not isinstance(item, dict) or not target_matches(target, item):
                 continue
+            if item.get("classification") == "descartada":
+                continue
             match = candidate_to_match(item, source_type)
-            key = normalize(match["url"] or f"{match['company']} {match['title']}")
+            key = match_key(match)
             if not key or key in seen:
                 continue
             seen.add(key)

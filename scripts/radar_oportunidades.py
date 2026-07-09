@@ -115,6 +115,51 @@ INTERNATIONAL_TERMS = (
     "masters",
     "funded",
 )
+TRAINEE_ROUTE_TERMS = (
+    "trainee",
+    "graduate",
+    "graduate program",
+    "jovem talento",
+    "jovens talentos",
+    "entry level",
+    "entry-level",
+    "early career",
+    "early careers",
+    "programa de talentos",
+)
+TRAINEE_TARGET_TERMS = (
+    "hitachi energy",
+    "hitachi",
+    "neoenergia",
+    "iberdrola",
+    "edp",
+    "isa energia",
+    "isa cteep",
+    "cteep",
+    "eletrobras",
+    "axia energia",
+    "axia",
+    "taesa",
+    "vale",
+    "siemens energy",
+    "engie",
+    "cpfl",
+    "equatorial",
+    "eneva",
+    "itau",
+    "itaú",
+    "itau bba",
+    "itaú bba",
+    "btg",
+    "santander",
+    "safra",
+    "nestle",
+    "nestlé",
+    "suzano",
+    "ambev",
+    "raizen",
+    "raízen",
+)
 BLOCKED_AUTO_NEW_DOMAINS = (
     "linkedin.com",
     "indeed.com",
@@ -542,6 +587,13 @@ def is_international(query: str, title: str, snippet: str) -> bool:
     return any(term in text for term in INTERNATIONAL_TERMS) and "brasil" not in text
 
 
+def is_trainee_result(query: str, title: str, snippet: str, company: str, link: str) -> bool:
+    text = source_text(f"{query} {title} {snippet} {company} {link}")
+    has_signal = any(source_text(term) in text for term in TRAINEE_ROUTE_TERMS)
+    has_target = any(source_text(term) in text for term in TRAINEE_TARGET_TERMS)
+    return has_signal and has_target
+
+
 def search_web(query: str) -> list[dict[str, str]]:
     import requests
 
@@ -657,12 +709,13 @@ def result_to_candidate(result: dict[str, str]) -> tuple[str, dict[str, Any]]:
         }
         return "internacional", candidate
 
+    destino = "trainees" if is_trainee_result(query, title, snippet, company, link) else "vagas"
     candidate = {
         "company": company,
         "opportunity": title,
-        "type": "Oportunidade encontrada pelo radar",
+        "type": "Trainee/graduate encontrado pelo radar" if destino == "trainees" else "Oportunidade encontrada pelo radar",
         "status": "Radar",
-        "cluster": infer_cluster(title, snippet),
+        "cluster": "Trainees & Graduates" if destino == "trainees" else infer_cluster(title, snippet),
         "location": infer_location(title, snippet),
         "model": "A confirmar",
         "careerFit": 0,
@@ -683,7 +736,7 @@ def result_to_candidate(result: dict[str, str]) -> tuple[str, dict[str, Any]]:
         "applyUrl": link,
         "cv": infer_cv(title, snippet),
     }
-    return "vagas", candidate
+    return destino, candidate
 
 
 def infer_cluster(title: str, snippet: str) -> str:
@@ -796,14 +849,26 @@ def apply_scores(candidate: dict[str, Any], prioridade: int, motivo: str, destin
     candidate["why"] = motivo or candidate.get("why", "")
 
 
-def process_results(results: list[dict[str, str]], vagas: list[dict[str, Any]], internacional: list[dict[str, Any]]) -> list[RadarResult]:
+def process_results(
+    results: list[dict[str, str]],
+    vagas: list[dict[str, Any]],
+    internacional: list[dict[str, Any]],
+    historico: list[dict[str, Any]] | None = None,
+) -> list[RadarResult]:
     dedup_vagas = Deduplicador(vagas)
     dedup_internacional = Deduplicador(internacional)
+    historico_trainees = [item for item in historico or [] if item.get("destination") == "trainees"]
+    dedup_trainees = Deduplicador(historico_trainees)
     processed: list[RadarResult] = []
 
     for raw in results:
         destino, candidate = result_to_candidate(raw)
-        dedup = dedup_internacional if destino == "internacional" else dedup_vagas
+        if destino == "internacional":
+            dedup = dedup_internacional
+        elif destino == "trainees":
+            dedup = dedup_trainees
+        else:
+            dedup = dedup_vagas
         duplicate_reason, _, duplicate_score = dedup.find_match(candidate)
         classification = hard_veto_classification(candidate, duplicate_reason)
         if classification is None:
@@ -834,6 +899,8 @@ def build_history_entry(item: RadarResult, run_date: str) -> dict[str, Any]:
 
 
 def should_add_to_atlas(item: RadarResult) -> bool:
+    if item.destino == "trainees":
+        return False
     url, title = source_details(item.candidate)
     official_source = (
         is_official_international_source(url, title)
@@ -875,7 +942,12 @@ def monitor_email_quality(item: RadarResult) -> tuple[int, int, int, int]:
 
 
 def useful_monitor_items(processed: list[RadarResult], limit: int = 8) -> list[RadarResult]:
-    monitor_items = [item for item in processed if item.classificacao == "monitorar"]
+    monitor_items = [
+        item
+        for item in processed
+        if item.classificacao == "monitorar"
+        or (item.destino == "trainees" and item.classificacao in {"nova", "atualizacao"})
+    ]
     preferred = [item for item in monitor_items if monitor_email_quality(item)[0]]
     source = preferred or monitor_items
     return sorted(source, key=monitor_email_quality, reverse=True)[:limit]
@@ -1031,7 +1103,7 @@ def main() -> int:
     load_json(CONFIG_PATH, {})
 
     raw_results, errors = search_all(TERMOS_PRIORITARIOS)
-    processed = process_results(raw_results, vagas, internacional)
+    processed = process_results(raw_results, vagas, internacional, historico)
 
     additions_vagas = [item.candidate for item in processed if item.destino == "vagas" and should_add_to_atlas(item)]
     additions_internacional = [item.candidate for item in processed if item.destino == "internacional" and should_add_to_atlas(item)]
@@ -1078,6 +1150,7 @@ def main() -> int:
     print(f"Dry-run: {'sim' if dry_run else 'não'}")
     print(f"Itens vistos: {len(processed)}")
     print(f"Entradas para vagas: {len(additions_vagas)}")
+    print(f"Sinais para trainees: {sum(1 for item in processed if item.destino == 'trainees')}")
     print(f"Entradas para internacional: {len(additions_internacional)}")
     print(f"E-mail enviado: {'sim' if email_sent else 'não'}")
     return 0

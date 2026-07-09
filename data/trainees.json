@@ -43,10 +43,55 @@
         "internacional",
         "SP"
       ],
-      "radarMatches": [],
-      "radarCount": 0,
-      "lastSeenAt": "",
-      "radarStatus": "Monitorar"
+      "radarMatches": [
+        {
+          "title": "Estágio e Trainee na Hitachi Energy",
+          "company": "Hitachi Energy",
+          "url": "https://www.hitachienergy.com/br/pt/careers/estagio-na-hitachi-energy",
+          "source": "historico",
+          "sourceDomain": "hitachienergy.com",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-09",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
+          "title": "Trainee Hitachi: vagas abertas",
+          "company": "Sejatrainee",
+          "url": "https://sejatrainee.com.br/trainee-hitachi-vagas-abertas/",
+          "source": "historico",
+          "sourceDomain": "sejatrainee.com.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-09",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
+          "title": "Programa de Trainee Hitachi Energy 2022",
+          "company": "Hitachi Energy",
+          "url": "https://www.ciadeestagios.com.br/vagas/hitachienergy/",
+          "source": "historico",
+          "sourceDomain": "ciadeestagios.com.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-09",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
+          "title": "Early Career Programs",
+          "company": "Hitachienergy",
+          "url": "https://www.hitachienergy.com/careers/about-us/early-career",
+          "source": "historico",
+          "sourceDomain": "hitachienergy.com",
+          "status": "monitorar",
+          "priority": 45,
+          "date": "2026-07-09",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        }
+      ],
+      "radarCount": 4,
+      "lastSeenAt": "2026-07-09",
+      "radarStatus": "Sinais recentes"
     },
     {
       "id": "neoenergia",
@@ -74,10 +119,44 @@
         "gestao",
         "internacional"
       ],
-      "radarMatches": [],
-      "radarCount": 0,
-      "lastSeenAt": "",
-      "radarStatus": "Monitorar"
+      "radarMatches": [
+        {
+          "title": "Programa de Trainee - Neoenergia",
+          "company": "Neoenergia",
+          "url": "https://www.neoenergia.com/en/trainee-program",
+          "source": "historico",
+          "sourceDomain": "neoenergia.com",
+          "status": "nova",
+          "priority": 87,
+          "date": "2026-07-09",
+          "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
+        },
+        {
+          "title": "Programa de Trainee - Neoenergia",
+          "company": "Neoenergia",
+          "url": "https://www.neoenergia.com/es/programa-de-entrenamiento",
+          "source": "historico",
+          "sourceDomain": "neoenergia.com",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-09",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
+          "title": "Trainee Neoenergia tem vagas para todas as formações",
+          "company": "Neoenergia",
+          "url": "https://sejatrainee.com.br/trainee-neoenergia-tem-vagas-para-todas-as-formacoes/",
+          "source": "historico",
+          "sourceDomain": "sejatrainee.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-09",
+          "reason": "Resultado de agregador ou busca generica; monitorar e procurar candidatura oficial."
+        }
+      ],
+      "radarCount": 3,
+      "lastSeenAt": "2026-07-09",
+      "radarStatus": "Sinais recentes"
     },
     {
       "id": "edp",
@@ -106,10 +185,44 @@
         "transicao",
         "executivo"
       ],
-      "radarMatches": [],
-      "radarCount": 0,
-      "lastSeenAt": "",
-      "radarStatus": "Monitorar"
+      "radarMatches": [
+        {
+          "title": "EDP. Trainee Program: Global Graduate Program 2026.",
+          "company": "EDP",
+          "url": "https://talentportugal.com/en/trainee-program/EDP-%E2%80%8B%E2%80%8BGlobal-Graduate-Program/",
+          "source": "historico",
+          "sourceDomain": "talentportugal.com",
+          "status": "nova",
+          "priority": 87,
+          "date": "2026-07-09",
+          "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
+        },
+        {
+          "title": "EDP launches the EDP Global Graduate Program",
+          "company": "EDP",
+          "url": "https://edp.com/en/media/edp-launches-edp-global-graduate-program",
+          "source": "historico",
+          "sourceDomain": "edp.com",
+          "status": "monitorar",
+          "priority": 60,
+          "date": "2026-07-09",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
+          "title": "EDP Global Graduate Program",
+          "company": "EDP",
+          "url": "https://edp.com/en/careers/job-opportunities/start-your-career/edp-global-graduate-program",
+          "source": "historico",
+          "sourceDomain": "edp.com",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-09",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        }
+      ],
+      "radarCount": 3,
+      "lastSeenAt": "2026-07-09",
+      "radarStatus": "Sinais recentes"
     },
     {
       "id": "isa-energia",
@@ -137,10 +250,77 @@
         "SP",
         "infraestrutura"
       ],
-      "radarMatches": [],
-      "radarCount": 0,
-      "lastSeenAt": "",
-      "radarStatus": "Monitorar"
+      "radarMatches": [
+        {
+          "title": "Trainee Program - ISA ENERGIA BRASIL",
+          "company": "ISA Energia",
+          "url": "https://www.isaenergiabrasil.com.br/en/careers/trainee-program/",
+          "source": "historico",
+          "sourceDomain": "isaenergiabrasil.com.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-09",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
+          "title": "Trainee Isa Energia: vagas abertas",
+          "company": "ISA Energia",
+          "url": "https://sejatrainee.com.br/trainee-isa-energia-vagas-abertas/",
+          "source": "historico",
+          "sourceDomain": "sejatrainee.com.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-09",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
+          "title": "ISA ENERGIA BRASIL abre inscrições para o Programa de Trainee ...",
+          "company": "ISA Energia",
+          "url": "https://www.isaenergiabrasil.com.br/centro-de-midia/noticias/isa-energia-brasil-abre-inscricoes-para-o-programa-de-trainee-2026/",
+          "source": "historico",
+          "sourceDomain": "isaenergiabrasil.com.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-09",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
+          "title": "isa PROGRAMA DE TRAINEE 2026 ISA ENERGIA BRASIL ...",
+          "company": "ISA Energia",
+          "url": "https://www.instagram.com/p/DOwQ6eziShS/",
+          "source": "historico",
+          "sourceDomain": "instagram.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-09",
+          "reason": "Possível repetição detectada por titulo_parecido."
+        },
+        {
+          "title": "Programa Trainee 2026 | ISA ENERGIA BRASIL",
+          "company": "ISA Energia",
+          "url": "https://www.isaenergiabrasil.com.br/carreiras/programa-trainee/",
+          "source": "historico",
+          "sourceDomain": "isaenergiabrasil.com.br",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-09",
+          "reason": "Possível repetição detectada por titulo_parecido."
+        },
+        {
+          "title": "Programa de Trainee 2026 ISA Energia Brasil",
+          "company": "ISA Energia",
+          "url": "https://isaenergiabrasil.ves.jobs/",
+          "source": "historico",
+          "sourceDomain": "isaenergiabrasil.ves.jobs",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-09",
+          "reason": "Possível repetição detectada por titulo_parecido."
+        }
+      ],
+      "radarCount": 6,
+      "lastSeenAt": "2026-07-09",
+      "radarStatus": "Sinais recentes"
     },
     {
       "id": "eletrobras-axia",
@@ -168,10 +348,33 @@
         "marca",
         "infraestrutura"
       ],
-      "radarMatches": [],
-      "radarCount": 0,
-      "lastSeenAt": "",
-      "radarStatus": "Monitorar"
+      "radarMatches": [
+        {
+          "title": "Eletrobras - Programa de Trainee 2026",
+          "company": "Eletrobras",
+          "url": "https://www.ciadetalentos.com.br/eletrobrastrainee2026/",
+          "source": "historico",
+          "sourceDomain": "ciadetalentos.com.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-09",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
+          "title": "Eletrobras abre inscrições para Programa de Trainee 2026",
+          "company": "Eletrobras",
+          "url": "https://www.canalenergia.com.br/noticias/53323026/eletrobras-abre-inscricoes-para-programa-de-trainee-2026",
+          "source": "historico",
+          "sourceDomain": "canalenergia.com.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-09",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        }
+      ],
+      "radarCount": 2,
+      "lastSeenAt": "2026-07-09",
+      "radarStatus": "Sinais recentes"
     },
     {
       "id": "taesa",
@@ -197,10 +400,33 @@
         "RJ",
         "especialista"
       ],
-      "radarMatches": [],
-      "radarCount": 0,
-      "lastSeenAt": "",
-      "radarStatus": "Monitorar"
+      "radarMatches": [
+        {
+          "title": "Trainee Taesa: vagas abertas",
+          "company": "TAESA",
+          "url": "https://sejatrainee.com.br/trainee-taesa-vagas-abertas/",
+          "source": "historico",
+          "sourceDomain": "sejatrainee.com.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-09",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
+          "title": "TAESA trainee",
+          "company": "TAESA",
+          "url": "https://trainee.taesa.com.br/",
+          "source": "historico",
+          "sourceDomain": "trainee.taesa.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-09",
+          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
+        }
+      ],
+      "radarCount": 2,
+      "lastSeenAt": "2026-07-09",
+      "radarStatus": "Sinais recentes"
     },
     {
       "id": "vale-engenharia",
@@ -256,10 +482,99 @@
         "digital grid",
         "entry-level"
       ],
-      "radarMatches": [],
-      "radarCount": 0,
-      "lastSeenAt": "",
-      "radarStatus": "Monitorar"
+      "radarMatches": [
+        {
+          "title": "Early career programs in the energy sector",
+          "company": "Siemens-Energy",
+          "url": "https://www.siemens-energy.com/us/en/home/careers/early-career-programs.html",
+          "source": "historico",
+          "sourceDomain": "siemens-energy.com",
+          "status": "monitorar",
+          "priority": 60,
+          "date": "2026-07-09",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
+          "title": "Working at Siemens Energy | Careers & Job Opportunities",
+          "company": "Siemens Energy",
+          "url": "https://www.siemens-energy.com/us/en/home/careers/working-with-us.html",
+          "source": "historico",
+          "sourceDomain": "siemens-energy.com",
+          "status": "monitorar",
+          "priority": 45,
+          "date": "2026-07-09",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
+          "title": "Siemens Energy - Careers Marketplace",
+          "company": "Siemens Energy",
+          "url": "https://jobs.siemens-energy.com/",
+          "source": "historico",
+          "sourceDomain": "jobs.siemens-energy.com",
+          "status": "monitorar",
+          "priority": 45,
+          "date": "2026-07-09",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
+          "title": "Buscar vagas no Brasil | Siemens Energy - Careers Marketplace",
+          "company": "Siemens Energy",
+          "url": "https://jobs.siemens-energy.com/pt_PT/jobs/SearchJobsBrazil",
+          "source": "historico",
+          "sourceDomain": "jobs.siemens-energy.com",
+          "status": "monitorar",
+          "priority": 30,
+          "date": "2026-07-08",
+          "reason": "Resultado de agregador ou busca generica; monitorar e procurar candidatura oficial."
+        },
+        {
+          "title": "Buscar vagas no Brasil | Siemens Energy - Careers Marketplace",
+          "company": "Siemens Energy",
+          "url": "https://jobs.siemens-energy.com/pt_PT/CareersMarketplace/searchJobsBrazil",
+          "source": "historico",
+          "sourceDomain": "jobs.siemens-energy.com",
+          "status": "monitorar",
+          "priority": 30,
+          "date": "2026-06-29",
+          "reason": "Resultado de agregador ou busca generica; monitorar e procurar candidatura oficial."
+        },
+        {
+          "title": "Busque vagas para estudantes e pós-graduados | Siemens Energy",
+          "company": "Siemens Energy",
+          "url": "https://jobs.siemens-energy.com/pt_PT/jobs/searchJobsStudents",
+          "source": "historico",
+          "sourceDomain": "jobs.siemens-energy.com",
+          "status": "monitorar",
+          "priority": 30,
+          "date": "2026-06-28",
+          "reason": "Resultado de agregador ou busca generica; monitorar e procurar candidatura oficial."
+        },
+        {
+          "title": "Programas de início de carreira - Estudantes e graduados",
+          "company": "Siemens-Energy",
+          "url": "https://www.siemens-energy.com/br/pt/home/careers/early-career-programs.html",
+          "source": "historico",
+          "sourceDomain": "siemens-energy.com",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-06-18",
+          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
+        },
+        {
+          "title": "Trabalhando na Siemens Energy: Carreiras e Oportunidades de ...",
+          "company": "Siemens Energy",
+          "url": "https://www.siemens-energy.com/br/pt/home/careers/working-with-us.html",
+          "source": "historico",
+          "sourceDomain": "siemens-energy.com",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-06-18",
+          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
+        }
+      ],
+      "radarCount": 8,
+      "lastSeenAt": "2026-07-09",
+      "radarStatus": "Sinais recentes"
     },
     {
       "id": "engie-cpfl-equatorial",
@@ -287,10 +602,88 @@
         "energia",
         "junior"
       ],
-      "radarMatches": [],
-      "radarCount": 0,
-      "lastSeenAt": "",
-      "radarStatus": "Monitorar"
+      "radarMatches": [
+        {
+          "title": "CPFL Energia abre inscrições em Campinas para o Programa de ...",
+          "company": "CPFL",
+          "url": "https://acicampinas.com.br/cpfl-energia-abre-inscricoes-em-campinas-para-o-programa-de-estagio-2026/",
+          "source": "historico",
+          "sourceDomain": "acicampinas.com.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-06-29",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
+          "title": "Ainda dá tempo de se inscrever no Programa de Estágio CPFL ...",
+          "company": "CPFL",
+          "url": "https://www.instagram.com/reel/DSFzw3ZEcpi/",
+          "source": "historico",
+          "sourceDomain": "instagram.com",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-06-18",
+          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
+        },
+        {
+          "title": "Engenharia - CPFL",
+          "company": "CPFL",
+          "url": "https://vagas.cpfl.com.br/go/Engenharia/4651019/",
+          "source": "historico",
+          "sourceDomain": "vagas.cpfl.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-06-18",
+          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
+        },
+        {
+          "title": "Programa de Estágio CPFL | CPFL Energia | 13 comentários",
+          "company": "CPFL",
+          "url": "https://pt.linkedin.com/posts/cpfl_programa-de-est%C3%A1gio-cpfl-activity-7361744286398197763-fGLv",
+          "source": "historico",
+          "sourceDomain": "pt.linkedin.com",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-06-18",
+          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
+        },
+        {
+          "title": "Seu futuro merece essa energia! ​ O Programa de Estágio CPFL ...",
+          "company": "CPFL",
+          "url": "https://www.instagram.com/p/DNOBT20Rot2/",
+          "source": "historico",
+          "sourceDomain": "instagram.com",
+          "status": "reclassificada_para_monitorar",
+          "priority": 30,
+          "date": "2026-06-18",
+          "reason": "Corrigida: fonte social vetada para nova entrada automatica; monitorar apenas como sinal secundario e procurar fonte oficial."
+        },
+        {
+          "title": "Programa de Estágio / oportunidades em energia, dados e eficiência",
+          "company": "CPFL Energia",
+          "url": "https://www2.grupocpfl.com.br/rh/estagio-cpfl",
+          "source": "vagas",
+          "sourceDomain": "www2.grupocpfl.com.br",
+          "status": "Recorrente",
+          "priority": 0,
+          "date": "",
+          "reason": "É o melhor alvo recorrente para unir Engenharia Elétrica, energia, dados, eficiência e geografia favorável."
+        },
+        {
+          "title": "Estagio CPFL",
+          "company": "CPFL",
+          "url": "https://www.grupocpfl.com.br/rh/estagio-cpfl",
+          "source": "vagas",
+          "sourceDomain": "grupocpfl.com.br",
+          "status": "Radar",
+          "priority": 0,
+          "date": "",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        }
+      ],
+      "radarCount": 7,
+      "lastSeenAt": "2026-06-29",
+      "radarStatus": "Sinais recentes"
     },
     {
       "id": "eneva",
@@ -348,10 +741,22 @@
         "infra",
         "finance"
       ],
-      "radarMatches": [],
-      "radarCount": 0,
-      "lastSeenAt": "",
-      "radarStatus": "Monitorar"
+      "radarMatches": [
+        {
+          "title": "Itaú BBA: vagas abertas - Seja Trainee",
+          "company": "Itau",
+          "url": "https://sejatrainee.com.br/itau-bba-vagas-abertas/",
+          "source": "historico",
+          "sourceDomain": "sejatrainee.com.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-09",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        }
+      ],
+      "radarCount": 1,
+      "lastSeenAt": "2026-07-09",
+      "radarStatus": "Sinais recentes"
     },
     {
       "id": "btg-santander-safra",
