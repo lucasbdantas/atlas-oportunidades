@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-09",
+  "updatedAt": "2026-07-10",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -44,6 +44,17 @@
         "SP"
       ],
       "radarMatches": [
+        {
+          "title": "Programa de Estágio Acelera Hitachi Energy 2026",
+          "company": "Hitachi Energy",
+          "url": "https://www.hitachienergy.com/br/pt/careers/programa-de-est-gio-acelera-hitachi-energy-2026",
+          "source": "historico",
+          "sourceDomain": "hitachienergy.com",
+          "status": "nova",
+          "priority": 87,
+          "date": "2026-07-10",
+          "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
+        },
         {
           "title": "Estágio e Trainee na Hitachi Energy",
           "company": "Hitachi Energy",
@@ -89,8 +100,8 @@
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
-      "radarCount": 4,
-      "lastSeenAt": "2026-07-09",
+      "radarCount": 5,
+      "lastSeenAt": "2026-07-10",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -120,6 +131,50 @@
         "internacional"
       ],
       "radarMatches": [
+        {
+          "title": "Programa de Estágio",
+          "company": "Neoenergia",
+          "url": "https://www.neoenergia.com/programa-de-estagio",
+          "source": "historico",
+          "sourceDomain": "neoenergia.com",
+          "status": "nova",
+          "priority": 95,
+          "date": "2026-07-10",
+          "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
+        },
+        {
+          "title": "Programas de estudiantes en prácticas",
+          "company": "Iberdrola",
+          "url": "https://www.iberdrola.com/trabaja-con-nosotros/estudiantes/programas-estudiantes-practicas",
+          "source": "historico",
+          "sourceDomain": "iberdrola.com",
+          "status": "nova",
+          "priority": 87,
+          "date": "2026-07-10",
+          "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
+        },
+        {
+          "title": "Búsqueda de puestos - Myworkdayjobs.com",
+          "company": "Iberdrola",
+          "url": "https://iberdrola.wd3.myworkdayjobs.com/es/Iberdrola/details/Tcnico-a--Subtransmisso-II_R-20263?locationCountry=1a29bb1357b240ab99a2fa755cc87c0e",
+          "source": "historico",
+          "sourceDomain": "iberdrola.wd3.myworkdayjobs.com",
+          "status": "monitorar",
+          "priority": 60,
+          "date": "2026-07-10",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
+          "title": "Iberdrola en Brasil",
+          "company": "Neoenergia",
+          "url": "https://www.iberdrola.com/conocenos/neoenergia",
+          "source": "historico",
+          "sourceDomain": "iberdrola.com",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-10",
+          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
+        },
         {
           "title": "Programa de Trainee - Neoenergia",
           "company": "Neoenergia",
@@ -154,8 +209,8 @@
           "reason": "Resultado de agregador ou busca generica; monitorar e procurar candidatura oficial."
         }
       ],
-      "radarCount": 3,
-      "lastSeenAt": "2026-07-09",
+      "radarCount": 7,
+      "lastSeenAt": "2026-07-10",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -186,6 +241,17 @@
         "executivo"
       ],
       "radarMatches": [
+        {
+          "title": "EDP Global Graduate Program - LinkedIn",
+          "company": "EDP",
+          "url": "https://www.linkedin.com/posts/edp_edp-global-graduate-program-activity-7437565560206413824-kkC8",
+          "source": "historico",
+          "sourceDomain": "linkedin.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-10",
+          "reason": "Possível repetição detectada por url."
+        },
         {
           "title": "EDP. Trainee Program: Global Graduate Program 2026.",
           "company": "EDP",
@@ -220,8 +286,8 @@
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
-      "radarCount": 3,
-      "lastSeenAt": "2026-07-09",
+      "radarCount": 4,
+      "lastSeenAt": "2026-07-10",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -350,6 +416,50 @@
       ],
       "radarMatches": [
         {
+          "title": "Trainee Eletrobras: vagas abertas",
+          "company": "Eletrobras",
+          "url": "https://sejatrainee.com.br/trainee-eletrobras-vagas-abertas/",
+          "source": "historico",
+          "sourceDomain": "sejatrainee.com.br",
+          "status": "nova",
+          "priority": 87,
+          "date": "2026-07-10",
+          "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
+        },
+        {
+          "title": "Carreiras - AXIA Energia",
+          "company": "Axia Energia",
+          "url": "https://axia.com.br/carreiras",
+          "source": "historico",
+          "sourceDomain": "axia.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-10",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
+          "title": "O Programa Trainee Eletrobras 2026 é a chance de viver de perto ...",
+          "company": "Eletrobras",
+          "url": "https://www.instagram.com/reel/DPB6Q2kgoB1/?hl=en",
+          "source": "historico",
+          "sourceDomain": "instagram.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-10",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
+          "title": "Programa Trainee 2026 | Eletrobras | 33 comentários - LinkedIn",
+          "company": "Eletrobras",
+          "url": "https://pt.linkedin.com/posts/eletrobras_programa-trainee-2026-activity-7371512841239105537-7WYe",
+          "source": "historico",
+          "sourceDomain": "pt.linkedin.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-10",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
           "title": "Eletrobras - Programa de Trainee 2026",
           "company": "Eletrobras",
           "url": "https://www.ciadetalentos.com.br/eletrobrastrainee2026/",
@@ -372,8 +482,8 @@
           "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
-      "radarCount": 2,
-      "lastSeenAt": "2026-07-09",
+      "radarCount": 6,
+      "lastSeenAt": "2026-07-10",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -402,6 +512,39 @@
       ],
       "radarMatches": [
         {
+          "title": "How to pass the Taesa Trainee Program 2026 - YouTube",
+          "company": "TAESA",
+          "url": "https://www.youtube.com/watch?v=AjrmjzniYAU",
+          "source": "historico",
+          "sourceDomain": "youtube.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-10",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
+          "title": "Publicação de TAESA - Transmissora Aliança de Energia Elétrica SA",
+          "company": "TAESA",
+          "url": "https://pt.linkedin.com/posts/taesa_est%C3%A1-no-ar-o-programa-trainee-taesa-uma-activity-7422729754530971648-snWI",
+          "source": "historico",
+          "sourceDomain": "pt.linkedin.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-10",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
+          "title": "Está no ar o Programa Trainee TAESA! Uma jornada ... - Instagram",
+          "company": "TAESA",
+          "url": "https://www.instagram.com/p/DUHfTvjADuY/",
+          "source": "historico",
+          "sourceDomain": "instagram.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-10",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
           "title": "Trainee Taesa: vagas abertas",
           "company": "TAESA",
           "url": "https://sejatrainee.com.br/trainee-taesa-vagas-abertas/",
@@ -424,8 +567,8 @@
           "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
         }
       ],
-      "radarCount": 2,
-      "lastSeenAt": "2026-07-09",
+      "radarCount": 5,
+      "lastSeenAt": "2026-07-10",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -743,6 +886,39 @@
       ],
       "radarMatches": [
         {
+          "title": "Programas de Formação Itaú BBA",
+          "company": "Itau",
+          "url": "https://carreiras.itau.com.br/programas-itaubba",
+          "source": "historico",
+          "sourceDomain": "carreiras.itau.com.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-10",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
+          "title": "Programa de carreiras",
+          "company": "Itau",
+          "url": "https://carreiras.itau.com.br/programas",
+          "source": "historico",
+          "sourceDomain": "carreiras.itau.com.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-10",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
+          "title": "O programa de Trainee do Itaú BBA é uma das portas mais ...",
+          "company": "Itaú",
+          "url": "https://www.instagram.com/p/DN_sIKZCHeU/",
+          "source": "historico",
+          "sourceDomain": "instagram.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-10",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
           "title": "Itaú BBA: vagas abertas - Seja Trainee",
           "company": "Itau",
           "url": "https://sejatrainee.com.br/itau-bba-vagas-abertas/",
@@ -754,8 +930,8 @@
           "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
-      "radarCount": 1,
-      "lastSeenAt": "2026-07-09",
+      "radarCount": 4,
+      "lastSeenAt": "2026-07-10",
       "radarStatus": "Sinais recentes"
     },
     {
