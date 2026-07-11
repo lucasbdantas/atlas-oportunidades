@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-10",
+  "updatedAt": "2026-07-11",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -132,6 +132,28 @@
       ],
       "radarMatches": [
         {
+          "title": "Neoenergia abre las inscripciones para 2026 en su programa de ...",
+          "company": "Neoenergia",
+          "url": "https://www.iberdrola.com/sala-comunicacion/noticias/detalle/neoenergia-inscripciones-2026-programa-formacion-caravana-cultura-energetica",
+          "source": "historico",
+          "sourceDomain": "iberdrola.com",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-11",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
+          "title": "Neoenergia | Banco de Eletricistas - Myworkdayjobs.com",
+          "company": "Neoenergia",
+          "url": "https://iberdrola.wd3.myworkdayjobs.com/iberdrola/job/Neoenergia---Banco-de-Eletricistas_R-22197-1/apply",
+          "source": "historico",
+          "sourceDomain": "iberdrola.wd3.myworkdayjobs.com",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-11",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
           "title": "Programa de Estágio",
           "company": "Neoenergia",
           "url": "https://www.neoenergia.com/programa-de-estagio",
@@ -196,21 +218,10 @@
           "priority": 75,
           "date": "2026-07-09",
           "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
-        },
-        {
-          "title": "Trainee Neoenergia tem vagas para todas as formações",
-          "company": "Neoenergia",
-          "url": "https://sejatrainee.com.br/trainee-neoenergia-tem-vagas-para-todas-as-formacoes/",
-          "source": "historico",
-          "sourceDomain": "sejatrainee.com.br",
-          "status": "monitorar",
-          "priority": 50,
-          "date": "2026-07-09",
-          "reason": "Resultado de agregador ou busca generica; monitorar e procurar candidatura oficial."
         }
       ],
-      "radarCount": 7,
-      "lastSeenAt": "2026-07-10",
+      "radarCount": 8,
+      "lastSeenAt": "2026-07-11",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -241,6 +252,17 @@
         "executivo"
       ],
       "radarMatches": [
+        {
+          "title": "EDP lança o EDP Global Graduate Program - Jornal Económico",
+          "company": "EDP",
+          "url": "https://jornaleconomico.sapo.pt/noticias/edp-lanca-o-edp-global-graduate-program/",
+          "source": "historico",
+          "sourceDomain": "jornaleconomico.sapo.pt",
+          "status": "monitorar",
+          "priority": 60,
+          "date": "2026-07-11",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
         {
           "title": "EDP Global Graduate Program - LinkedIn",
           "company": "EDP",
@@ -286,8 +308,8 @@
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
-      "radarCount": 4,
-      "lastSeenAt": "2026-07-10",
+      "radarCount": 5,
+      "lastSeenAt": "2026-07-11",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -317,6 +339,17 @@
         "infraestrutura"
       ],
       "radarMatches": [
+        {
+          "title": "\"Eu sou Trainee ISA ENERGIA BRASIL e é claro que ... - Instagram",
+          "company": "ISA Energia",
+          "url": "https://www.instagram.com/reel/DPgoEsFDGJ-/",
+          "source": "historico",
+          "sourceDomain": "instagram.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-11",
+          "reason": "Possível repetição detectada por url."
+        },
         {
           "title": "Trainee Program - ISA ENERGIA BRASIL",
           "company": "ISA Energia",
@@ -384,8 +417,8 @@
           "reason": "Possível repetição detectada por titulo_parecido."
         }
       ],
-      "radarCount": 6,
-      "lastSeenAt": "2026-07-09",
+      "radarCount": 7,
+      "lastSeenAt": "2026-07-11",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -852,10 +885,22 @@
         "gas",
         "localizacao"
       ],
-      "radarMatches": [],
-      "radarCount": 0,
-      "lastSeenAt": "",
-      "radarStatus": "Monitorar"
+      "radarMatches": [
+        {
+          "title": "Já pensou em se inscrever em um programa trainee e ...",
+          "company": "Eneva",
+          "url": "https://www.facebook.com/enevabrasil/videos/j%C3%A1-pensou-em-se-inscrever-em-um-programa-trainee-e-semanas-depois-estar-em-uma-p/1153814760206494/",
+          "source": "historico",
+          "sourceDomain": "facebook.com",
+          "status": "monitorar",
+          "priority": 30,
+          "date": "2026-07-11",
+          "reason": "Fonte social/noticia: usar apenas como sinal secundario, sem entrada automatica no Atlas."
+        }
+      ],
+      "radarCount": 1,
+      "lastSeenAt": "2026-07-11",
+      "radarStatus": "Sinais recentes"
     },
     {
       "id": "itau-bba",
@@ -885,6 +930,28 @@
         "finance"
       ],
       "radarMatches": [
+        {
+          "title": "Itaú Carreiras",
+          "company": "Itau",
+          "url": "https://carreiras.itau.com.br/",
+          "source": "historico",
+          "sourceDomain": "carreiras.itau.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-11",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
+          "title": "Do Itaú Unibanco para itubers on Instagram: \"Recebemos no ...",
+          "company": "Itaú",
+          "url": "https://www.instagram.com/reel/DTINJz2AOBh/",
+          "source": "historico",
+          "sourceDomain": "instagram.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-11",
+          "reason": "Possível repetição detectada por url."
+        },
         {
           "title": "Programas de Formação Itaú BBA",
           "company": "Itau",
@@ -930,8 +997,8 @@
           "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
-      "radarCount": 4,
-      "lastSeenAt": "2026-07-10",
+      "radarCount": 6,
+      "lastSeenAt": "2026-07-11",
       "radarStatus": "Sinais recentes"
     },
     {
