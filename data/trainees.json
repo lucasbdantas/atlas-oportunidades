@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-11",
+  "updatedAt": "2026-07-12",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -253,6 +253,17 @@
       ],
       "radarMatches": [
         {
+          "title": "EDP Global Graduate Program | EDP Brasil",
+          "company": "EDP",
+          "url": "https://pt.linkedin.com/posts/edpbrasil_edp-global-graduate-program-activity-7435267350196547584-7uou",
+          "source": "historico",
+          "sourceDomain": "pt.linkedin.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-12",
+          "reason": "Possível repetição detectada por titulo_parecido."
+        },
+        {
           "title": "EDP lança o EDP Global Graduate Program - Jornal Económico",
           "company": "EDP",
           "url": "https://jornaleconomico.sapo.pt/noticias/edp-lanca-o-edp-global-graduate-program/",
@@ -308,8 +319,8 @@
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
-      "radarCount": 5,
-      "lastSeenAt": "2026-07-11",
+      "radarCount": 6,
+      "lastSeenAt": "2026-07-12",
       "radarStatus": "Sinais recentes"
     },
     {
