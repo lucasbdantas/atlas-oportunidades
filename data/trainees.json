@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-12",
+  "updatedAt": "2026-07-13",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -253,6 +253,17 @@
       ],
       "radarMatches": [
         {
+          "title": "EDP Global Graduate Program https://estagiar.pt ...",
+          "company": "EDP",
+          "url": "https://www.facebook.com/estagiar.pt/posts/edp-global-graduate-programhttpsestagiarptedp-global-graduate-programedptraineeg/1379344804231813/",
+          "source": "historico",
+          "sourceDomain": "facebook.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-13",
+          "reason": "Possível repetição detectada por empresa_programa."
+        },
+        {
           "title": "EDP Global Graduate Program | EDP Brasil",
           "company": "EDP",
           "url": "https://pt.linkedin.com/posts/edpbrasil_edp-global-graduate-program-activity-7435267350196547584-7uou",
@@ -319,8 +330,8 @@
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
-      "radarCount": 6,
-      "lastSeenAt": "2026-07-12",
+      "radarCount": 7,
+      "lastSeenAt": "2026-07-13",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -791,6 +802,28 @@
       ],
       "radarMatches": [
         {
+          "title": "Estagiário Nivel Superior Detalhes da vaga",
+          "company": "CPFL",
+          "url": "https://vagas.cpfl.com.br/job/Campinas-Estagi%C3%A1rio-Nivel-Superior/1334533162/",
+          "source": "historico",
+          "sourceDomain": "vagas.cpfl.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-13",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
+          "title": "Estagiário Nivel Superior Detalhes da vaga",
+          "company": "CPFL",
+          "url": "https://vagas.cpfl.com.br/job/S%C3%A3o-Paulo-Estagi%C3%A1rio-Nivel-Superior/1334405562/",
+          "source": "historico",
+          "sourceDomain": "vagas.cpfl.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-13",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
           "title": "CPFL Energia abre inscrições em Campinas para o Programa de ...",
           "company": "CPFL",
           "url": "https://acicampinas.com.br/cpfl-energia-abre-inscricoes-em-campinas-para-o-programa-de-estagio-2026/",
@@ -855,21 +888,10 @@
           "priority": 0,
           "date": "",
           "reason": "É o melhor alvo recorrente para unir Engenharia Elétrica, energia, dados, eficiência e geografia favorável."
-        },
-        {
-          "title": "Estagio CPFL",
-          "company": "CPFL",
-          "url": "https://www.grupocpfl.com.br/rh/estagio-cpfl",
-          "source": "vagas",
-          "sourceDomain": "grupocpfl.com.br",
-          "status": "Radar",
-          "priority": 0,
-          "date": "",
-          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
-      "radarCount": 7,
-      "lastSeenAt": "2026-06-29",
+      "radarCount": 8,
+      "lastSeenAt": "2026-07-13",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -898,6 +920,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Eneva on Instagram: \"Já pensou em se inscrever em um programa ...",
+          "company": "Eneva",
+          "url": "https://www.instagram.com/reel/DXzO0UDDHbu/?hl=en",
+          "source": "historico",
+          "sourceDomain": "instagram.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-13",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
           "title": "Já pensou em se inscrever em um programa trainee e ...",
           "company": "Eneva",
           "url": "https://www.facebook.com/enevabrasil/videos/j%C3%A1-pensou-em-se-inscrever-em-um-programa-trainee-e-semanas-depois-estar-em-uma-p/1153814760206494/",
@@ -909,8 +942,8 @@
           "reason": "Fonte social/noticia: usar apenas como sinal secundario, sem entrada automatica no Atlas."
         }
       ],
-      "radarCount": 1,
-      "lastSeenAt": "2026-07-11",
+      "radarCount": 2,
+      "lastSeenAt": "2026-07-13",
       "radarStatus": "Sinais recentes"
     },
     {
