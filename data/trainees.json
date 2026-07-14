@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -253,6 +253,28 @@
       ],
       "radarMatches": [
         {
+          "title": "EDP lanza el Global Graduate Program para jóvenes que quieran ...",
+          "company": "EDP",
+          "url": "https://elperiodicodelaenergia.com/edp-lanza-el-global-graduate-program-para-jovenes-que-quieran-construir-el-futuro-de-la-energia/",
+          "source": "historico",
+          "sourceDomain": "elperiodicodelaenergia.com",
+          "status": "monitorar",
+          "priority": 60,
+          "date": "2026-07-14",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
+          "title": "Global EDP Trainee Program",
+          "company": "EDP",
+          "url": "https://www.linkedin.com/pulse/global-edp-trainee-program-miguel-lu%C3%ADs",
+          "source": "historico",
+          "sourceDomain": "linkedin.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-14",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
           "title": "EDP Global Graduate Program https://estagiar.pt ...",
           "company": "EDP",
           "url": "https://www.facebook.com/estagiar.pt/posts/edp-global-graduate-programhttpsestagiarptedp-global-graduate-programedptraineeg/1379344804231813/",
@@ -317,21 +339,10 @@
           "priority": 60,
           "date": "2026-07-09",
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
-        },
-        {
-          "title": "EDP Global Graduate Program",
-          "company": "EDP",
-          "url": "https://edp.com/en/careers/job-opportunities/start-your-career/edp-global-graduate-program",
-          "source": "historico",
-          "sourceDomain": "edp.com",
-          "status": "monitorar",
-          "priority": 50,
-          "date": "2026-07-09",
-          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
-      "radarCount": 7,
-      "lastSeenAt": "2026-07-13",
+      "radarCount": 8,
+      "lastSeenAt": "2026-07-14",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -361,6 +372,17 @@
         "infraestrutura"
       ],
       "radarMatches": [
+        {
+          "title": "ISA ENERGIA BRASIL | Carreiras",
+          "company": "ISA Energia",
+          "url": "https://www.isaenergiabrasil.com.br/carreiras/",
+          "source": "historico",
+          "sourceDomain": "isaenergiabrasil.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-14",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
         {
           "title": "\"Eu sou Trainee ISA ENERGIA BRASIL e é claro que ... - Instagram",
           "company": "ISA Energia",
@@ -439,8 +461,8 @@
           "reason": "Possível repetição detectada por titulo_parecido."
         }
       ],
-      "radarCount": 7,
-      "lastSeenAt": "2026-07-11",
+      "radarCount": 8,
+      "lastSeenAt": "2026-07-14",
       "radarStatus": "Sinais recentes"
     },
     {
