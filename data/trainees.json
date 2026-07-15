@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-07-15",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -132,6 +132,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Neoenergia opens applications for 2026 for its 'Energy ...",
+          "company": "Neoenergia",
+          "url": "https://www.iberdrola.com/press-room/news/detail/neoenergia-opens-applications-2026-energy-culture-caravan-training-programme",
+          "source": "historico",
+          "sourceDomain": "iberdrola.com",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-15",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
           "title": "Neoenergia abre las inscripciones para 2026 en su programa de ...",
           "company": "Neoenergia",
           "url": "https://www.iberdrola.com/sala-comunicacion/noticias/detalle/neoenergia-inscripciones-2026-programa-formacion-caravana-cultura-energetica",
@@ -207,21 +218,10 @@
           "priority": 87,
           "date": "2026-07-09",
           "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
-        },
-        {
-          "title": "Programa de Trainee - Neoenergia",
-          "company": "Neoenergia",
-          "url": "https://www.neoenergia.com/es/programa-de-entrenamiento",
-          "source": "historico",
-          "sourceDomain": "neoenergia.com",
-          "status": "nova",
-          "priority": 75,
-          "date": "2026-07-09",
-          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-11",
+      "lastSeenAt": "2026-07-15",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -373,6 +373,17 @@
       ],
       "radarMatches": [
         {
+          "title": "\"Quem vier para a ISA ENERGIA BRASIL tem que estar disposto a ...",
+          "company": "ISA Energia",
+          "url": "https://www.instagram.com/reel/DPRjVrAEm7z/",
+          "source": "historico",
+          "sourceDomain": "instagram.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-15",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
           "title": "ISA ENERGIA BRASIL | Carreiras",
           "company": "ISA Energia",
           "url": "https://www.isaenergiabrasil.com.br/carreiras/",
@@ -448,21 +459,10 @@
           "priority": 0,
           "date": "2026-07-09",
           "reason": "Possível repetição detectada por titulo_parecido."
-        },
-        {
-          "title": "Programa de Trainee 2026 ISA Energia Brasil",
-          "company": "ISA Energia",
-          "url": "https://isaenergiabrasil.ves.jobs/",
-          "source": "historico",
-          "sourceDomain": "isaenergiabrasil.ves.jobs",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-09",
-          "reason": "Possível repetição detectada por titulo_parecido."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-14",
+      "lastSeenAt": "2026-07-15",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -492,6 +492,28 @@
         "infraestrutura"
       ],
       "radarMatches": [
+        {
+          "title": "Globe | Programa de Estágio AXIA Energia 2026 - 2º Ciclo",
+          "company": "Axia Energia",
+          "url": "https://vagas.ciadetalentos.com.br/hotsite/axiaestagio2026",
+          "source": "historico",
+          "sourceDomain": "vagas.ciadetalentos.com.br",
+          "status": "nova",
+          "priority": 87,
+          "date": "2026-07-15",
+          "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
+        },
+        {
+          "title": "AXIA Energia | Soluções em energia renovável - AXIA Energia",
+          "company": "Axia Energia",
+          "url": "https://axia.com.br/",
+          "source": "historico",
+          "sourceDomain": "axia.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-15",
+          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
+        },
         {
           "title": "Trainee Eletrobras: vagas abertas",
           "company": "Eletrobras",
@@ -559,8 +581,8 @@
           "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
-      "radarCount": 6,
-      "lastSeenAt": "2026-07-10",
+      "radarCount": 8,
+      "lastSeenAt": "2026-07-15",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -673,10 +695,22 @@
         "engenharia",
         "early"
       ],
-      "radarMatches": [],
-      "radarCount": 0,
-      "lastSeenAt": "",
-      "radarStatus": "Monitorar"
+      "radarMatches": [
+        {
+          "title": "Trainee em Engenharia - Vale",
+          "company": "Vale",
+          "url": "https://www.vale.com/programa-trainee-engenharia",
+          "source": "historico",
+          "sourceDomain": "vale.com",
+          "status": "nova",
+          "priority": 87,
+          "date": "2026-07-15",
+          "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
+        }
+      ],
+      "radarCount": 1,
+      "lastSeenAt": "2026-07-15",
+      "radarStatus": "Sinais recentes"
     },
     {
       "id": "siemens-energy",
