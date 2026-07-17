@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-16",
+  "updatedAt": "2026-07-17",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -132,6 +132,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Programa de Trainee",
+          "company": "Neoenergia",
+          "url": "https://www.neoenergia.com/programa-de-trainee",
+          "source": "historico",
+          "sourceDomain": "neoenergia.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-17",
+          "reason": "Possível repetição detectada por empresa_programa."
+        },
+        {
           "title": "Neoenergia opens applications for 2026 for its 'Energy ...",
           "company": "Neoenergia",
           "url": "https://www.iberdrola.com/press-room/news/detail/neoenergia-opens-applications-2026-energy-culture-caravan-training-programme",
@@ -207,21 +218,10 @@
           "priority": 50,
           "date": "2026-07-10",
           "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
-        },
-        {
-          "title": "Programa de Trainee - Neoenergia",
-          "company": "Neoenergia",
-          "url": "https://www.neoenergia.com/en/trainee-program",
-          "source": "historico",
-          "sourceDomain": "neoenergia.com",
-          "status": "nova",
-          "priority": 87,
-          "date": "2026-07-09",
-          "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-15",
+      "lastSeenAt": "2026-07-17",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -252,6 +252,17 @@
         "executivo"
       ],
       "radarMatches": [
+        {
+          "title": "EDP launches global graduate program for STEM and management ...",
+          "company": "EDP",
+          "url": "https://devs.com.pt/en/news/edp-launches-global-graduate-program-for-stem-and-management-graduates",
+          "source": "historico",
+          "sourceDomain": "devs.com.pt",
+          "status": "monitorar",
+          "priority": 60,
+          "date": "2026-07-17",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
         {
           "title": "EDP lanza el Global Graduate Program para jóvenes que quieran ...",
           "company": "EDP",
@@ -328,21 +339,10 @@
           "priority": 87,
           "date": "2026-07-09",
           "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
-        },
-        {
-          "title": "EDP launches the EDP Global Graduate Program",
-          "company": "EDP",
-          "url": "https://edp.com/en/media/edp-launches-edp-global-graduate-program",
-          "source": "historico",
-          "sourceDomain": "edp.com",
-          "status": "monitorar",
-          "priority": 60,
-          "date": "2026-07-09",
-          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-14",
+      "lastSeenAt": "2026-07-17",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -493,6 +493,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Trabalhe Conosco",
+          "company": "Eletrobras",
+          "url": "https://www.eletrobras.com/pt/Paginas/Trabalhe-Conosco.aspx",
+          "source": "historico",
+          "sourceDomain": "eletrobras.com",
+          "status": "monitorar",
+          "priority": 60,
+          "date": "2026-07-17",
+          "reason": "Faltam sinais fortes de fonte oficial, candidatura confiavel ou oportunidade especifica."
+        },
+        {
           "title": "Globe | Programa de Estágio AXIA Energia 2026 - 2º Ciclo",
           "company": "Axia Energia",
           "url": "https://vagas.ciadetalentos.com.br/hotsite/axiaestagio2026",
@@ -568,21 +579,10 @@
           "priority": 75,
           "date": "2026-07-09",
           "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
-        },
-        {
-          "title": "Eletrobras abre inscrições para Programa de Trainee 2026",
-          "company": "Eletrobras",
-          "url": "https://www.canalenergia.com.br/noticias/53323026/eletrobras-abre-inscricoes-para-programa-de-trainee-2026",
-          "source": "historico",
-          "sourceDomain": "canalenergia.com.br",
-          "status": "nova",
-          "priority": 75,
-          "date": "2026-07-09",
-          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-15",
+      "lastSeenAt": "2026-07-17",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -1031,6 +1031,28 @@
       ],
       "radarMatches": [
         {
+          "title": "programa de trainee itaú bba",
+          "company": "Itau",
+          "url": "https://www.estagio.ufv.br/sem-categoria/programa-de-trainee-itau-unibanco-e-trainee-itau-bba/",
+          "source": "historico",
+          "sourceDomain": "estagio.ufv.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-17",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
+          "title": "Trainee Itaú Unibanco 2026",
+          "company": "Itau",
+          "url": "https://traineeitauunibanco.com.br/",
+          "source": "historico",
+          "sourceDomain": "traineeitauunibanco.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-17",
+          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
+        },
+        {
           "title": "Itaú Carreiras",
           "company": "Itau",
           "url": "https://carreiras.itau.com.br/",
@@ -1097,8 +1119,8 @@
           "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
-      "radarCount": 6,
-      "lastSeenAt": "2026-07-11",
+      "radarCount": 8,
+      "lastSeenAt": "2026-07-17",
       "radarStatus": "Sinais recentes"
     },
     {
