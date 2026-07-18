@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-17",
+  "updatedAt": "2026-07-18",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -44,6 +44,17 @@
         "SP"
       ],
       "radarMatches": [
+        {
+          "title": "Vagas",
+          "company": "Hitachienergy",
+          "url": "https://www.hitachienergy.com/br/pt/careers/open-jobs",
+          "source": "historico",
+          "sourceDomain": "hitachienergy.com",
+          "status": "monitorar",
+          "priority": 60,
+          "date": "2026-07-18",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
         {
           "title": "Programa de Estágio Acelera Hitachi Energy 2026",
           "company": "Hitachi Energy",
@@ -100,8 +111,8 @@
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
-      "radarCount": 5,
-      "lastSeenAt": "2026-07-10",
+      "radarCount": 6,
+      "lastSeenAt": "2026-07-18",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -253,6 +264,17 @@
       ],
       "radarMatches": [
         {
+          "title": "EDP Global Graduate Program",
+          "company": "EDP",
+          "url": "https://edp.com/pt/carreiras/oportunidades-de-emprego/iniciar-a-carreira/edp-global-graduate-program",
+          "source": "historico",
+          "sourceDomain": "edp.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-18",
+          "reason": "Possível repetição detectada por empresa_programa."
+        },
+        {
           "title": "EDP launches global graduate program for STEM and management ...",
           "company": "EDP",
           "url": "https://devs.com.pt/en/news/edp-launches-global-graduate-program-for-stem-and-management-graduates",
@@ -328,21 +350,10 @@
           "priority": 0,
           "date": "2026-07-10",
           "reason": "Possível repetição detectada por url."
-        },
-        {
-          "title": "EDP. Trainee Program: Global Graduate Program 2026.",
-          "company": "EDP",
-          "url": "https://talentportugal.com/en/trainee-program/EDP-%E2%80%8B%E2%80%8BGlobal-Graduate-Program/",
-          "source": "historico",
-          "sourceDomain": "talentportugal.com",
-          "status": "nova",
-          "priority": 87,
-          "date": "2026-07-09",
-          "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-17",
+      "lastSeenAt": "2026-07-18",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -738,6 +749,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Buscar empleos en Brasil | Siemens Energy - Careers Marketplace",
+          "company": "Siemens Energy",
+          "url": "https://jobs.siemens-energy.com/es_ES/CareersMarketplace/searchJobsBrazil",
+          "source": "historico",
+          "sourceDomain": "jobs.siemens-energy.com",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-18",
+          "reason": "Resultado de agregador ou busca generica; monitorar e procurar candidatura oficial."
+        },
+        {
           "title": "Early career programs in the energy sector",
           "company": "Siemens-Energy",
           "url": "https://www.siemens-energy.com/us/en/home/careers/early-career-programs.html",
@@ -813,21 +835,10 @@
           "priority": 50,
           "date": "2026-06-18",
           "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
-        },
-        {
-          "title": "Trabalhando na Siemens Energy: Carreiras e Oportunidades de ...",
-          "company": "Siemens Energy",
-          "url": "https://www.siemens-energy.com/br/pt/home/careers/working-with-us.html",
-          "source": "historico",
-          "sourceDomain": "siemens-energy.com",
-          "status": "monitorar",
-          "priority": 50,
-          "date": "2026-06-18",
-          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-09",
+      "lastSeenAt": "2026-07-18",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -857,6 +868,28 @@
         "junior"
       ],
       "radarMatches": [
+        {
+          "title": "Vaga Estágio Engenharia Elétrica - CPFL Energia 2630926",
+          "company": "CPFL",
+          "url": "https://www.vagas.com.br/vagas/v2630926/estagio-engenharia-eletrica",
+          "source": "historico",
+          "sourceDomain": "vagas.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-18",
+          "reason": "Resultado de agregador ou busca generica; monitorar e procurar candidatura oficial."
+        },
+        {
+          "title": "Salário mensal de Estagiário da empresa CPFL Energia - Glassdoor",
+          "company": "CPFL",
+          "url": "https://www.glassdoor.com.br/Pagamento-mensal/CPFL-Energia-Estagi%C3%A1rio-Pagamento-mensal-E37422_D_KO13,23.htm",
+          "source": "historico",
+          "sourceDomain": "glassdoor.com.br",
+          "status": "monitorar",
+          "priority": 30,
+          "date": "2026-07-18",
+          "reason": "Resultado de agregador ou busca generica; monitorar e procurar candidatura oficial."
+        },
         {
           "title": "Estagiário Nivel Superior Detalhes da vaga",
           "company": "CPFL",
@@ -922,32 +955,10 @@
           "priority": 50,
           "date": "2026-06-18",
           "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
-        },
-        {
-          "title": "Seu futuro merece essa energia! ​ O Programa de Estágio CPFL ...",
-          "company": "CPFL",
-          "url": "https://www.instagram.com/p/DNOBT20Rot2/",
-          "source": "historico",
-          "sourceDomain": "instagram.com",
-          "status": "reclassificada_para_monitorar",
-          "priority": 30,
-          "date": "2026-06-18",
-          "reason": "Corrigida: fonte social vetada para nova entrada automatica; monitorar apenas como sinal secundario e procurar fonte oficial."
-        },
-        {
-          "title": "Programa de Estágio / oportunidades em energia, dados e eficiência",
-          "company": "CPFL Energia",
-          "url": "https://www2.grupocpfl.com.br/rh/estagio-cpfl",
-          "source": "vagas",
-          "sourceDomain": "www2.grupocpfl.com.br",
-          "status": "Recorrente",
-          "priority": 0,
-          "date": "",
-          "reason": "É o melhor alvo recorrente para unir Engenharia Elétrica, energia, dados, eficiência e geografia favorável."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-13",
+      "lastSeenAt": "2026-07-18",
       "radarStatus": "Sinais recentes"
     },
     {
