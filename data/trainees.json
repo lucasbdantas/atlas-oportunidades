@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-18",
+  "updatedAt": "2026-07-19",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -869,6 +869,17 @@
       ],
       "radarMatches": [
         {
+          "title": "CPFL Energia abre inscrições em Campinas para o ...",
+          "company": "CPFL",
+          "url": "https://www.grupocpfl.com.br/noticia/cpfl-energia-abre-inscricoes-em-campinas-para-o-programa-de-estagio-2026",
+          "source": "historico",
+          "sourceDomain": "grupocpfl.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-19",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
           "title": "Vaga Estágio Engenharia Elétrica - CPFL Energia 2630926",
           "company": "CPFL",
           "url": "https://www.vagas.com.br/vagas/v2630926/estagio-engenharia-eletrica",
@@ -944,21 +955,10 @@
           "priority": 50,
           "date": "2026-06-18",
           "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
-        },
-        {
-          "title": "Programa de Estágio CPFL | CPFL Energia | 13 comentários",
-          "company": "CPFL",
-          "url": "https://pt.linkedin.com/posts/cpfl_programa-de-est%C3%A1gio-cpfl-activity-7361744286398197763-fGLv",
-          "source": "historico",
-          "sourceDomain": "pt.linkedin.com",
-          "status": "monitorar",
-          "priority": 50,
-          "date": "2026-06-18",
-          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-18",
+      "lastSeenAt": "2026-07-19",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -1042,6 +1042,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Recrutadora do Itaú BBA fala sobre o programa de trainee",
+          "company": "Itau",
+          "url": "https://napratica.org.br/noticias/trainee-do-itau-bba-recrutadora-fala-sobre-o-programa",
+          "source": "historico",
+          "sourceDomain": "napratica.org.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-19",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
           "title": "programa de trainee itaú bba",
           "company": "Itau",
           "url": "https://www.estagio.ufv.br/sem-categoria/programa-de-trainee-itau-unibanco-e-trainee-itau-bba/",
@@ -1117,21 +1128,10 @@
           "priority": 0,
           "date": "2026-07-10",
           "reason": "Possível repetição detectada por url."
-        },
-        {
-          "title": "Itaú BBA: vagas abertas - Seja Trainee",
-          "company": "Itau",
-          "url": "https://sejatrainee.com.br/itau-bba-vagas-abertas/",
-          "source": "historico",
-          "sourceDomain": "sejatrainee.com.br",
-          "status": "nova",
-          "priority": 75,
-          "date": "2026-07-09",
-          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-17",
+      "lastSeenAt": "2026-07-19",
       "radarStatus": "Sinais recentes"
     },
     {
