@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-19",
+  "updatedAt": "2026-07-20",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -622,6 +622,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Taesa",
+          "company": "TAESA",
+          "url": "https://vagas.taesa.com.br/",
+          "source": "historico",
+          "sourceDomain": "vagas.taesa.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-20",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
           "title": "How to pass the Taesa Trainee Program 2026 - YouTube",
           "company": "TAESA",
           "url": "https://www.youtube.com/watch?v=AjrmjzniYAU",
@@ -677,8 +688,8 @@
           "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
         }
       ],
-      "radarCount": 5,
-      "lastSeenAt": "2026-07-10",
+      "radarCount": 6,
+      "lastSeenAt": "2026-07-20",
       "radarStatus": "Sinais recentes"
     },
     {
