@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-21",
+  "updatedAt": "2026-07-22",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -771,6 +771,17 @@
       ],
       "radarMatches": [
         {
+          "title": "37 vagas de Siemens Energy em: Brasil",
+          "company": "Siemens Energy",
+          "url": "https://br.linkedin.com/jobs/siemens-energy-vagas",
+          "source": "historico",
+          "sourceDomain": "br.linkedin.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-22",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
           "title": "Buscar empleos en Brasil | Siemens Energy - Careers Marketplace",
           "company": "Siemens Energy",
           "url": "https://jobs.siemens-energy.com/es_ES/CareersMarketplace/searchJobsBrazil",
@@ -846,21 +857,10 @@
           "priority": 30,
           "date": "2026-06-28",
           "reason": "Resultado de agregador ou busca generica; monitorar e procurar candidatura oficial."
-        },
-        {
-          "title": "Programas de início de carreira - Estudantes e graduados",
-          "company": "Siemens-Energy",
-          "url": "https://www.siemens-energy.com/br/pt/home/careers/early-career-programs.html",
-          "source": "historico",
-          "sourceDomain": "siemens-energy.com",
-          "status": "monitorar",
-          "priority": 50,
-          "date": "2026-06-18",
-          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-18",
+      "lastSeenAt": "2026-07-22",
       "radarStatus": "Sinais recentes"
     },
     {
