@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-22",
+  "updatedAt": "2026-07-23",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -732,6 +732,17 @@
         {
           "title": "Trainee em Engenharia - Vale",
           "company": "Vale",
+          "url": "https://vale.com/programa-trainee-engenharia",
+          "source": "historico",
+          "sourceDomain": "vale.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-23",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
+          "title": "Trainee em Engenharia - Vale",
+          "company": "Vale",
           "url": "https://www.vale.com/programa-trainee-engenharia",
           "source": "historico",
           "sourceDomain": "vale.com",
@@ -741,8 +752,8 @@
           "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
         }
       ],
-      "radarCount": 1,
-      "lastSeenAt": "2026-07-15",
+      "radarCount": 2,
+      "lastSeenAt": "2026-07-23",
       "radarStatus": "Sinais recentes"
     },
     {
