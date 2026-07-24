@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-23",
+  "updatedAt": "2026-07-24",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -275,6 +275,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Apply now to EDP's Global Graduate Program 🚀 | Miguel Luís",
+          "company": "EDP",
+          "url": "https://pt.linkedin.com/posts/mluis_apply-now-to-edps-global-graduate-program-activity-7434251083327115264-lBHU",
+          "source": "historico",
+          "sourceDomain": "pt.linkedin.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-24",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
           "title": "EDP Global Graduate Program",
           "company": "EDP",
           "url": "https://edp.com/pt/carreiras/oportunidades-de-emprego/iniciar-a-carreira/edp-global-graduate-program",
@@ -350,21 +361,10 @@
           "priority": 60,
           "date": "2026-07-11",
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
-        },
-        {
-          "title": "EDP Global Graduate Program - LinkedIn",
-          "company": "EDP",
-          "url": "https://www.linkedin.com/posts/edp_edp-global-graduate-program-activity-7437565560206413824-kkC8",
-          "source": "historico",
-          "sourceDomain": "linkedin.com",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-10",
-          "reason": "Possível repetição detectada por url."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-18",
+      "lastSeenAt": "2026-07-24",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -633,6 +633,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Ser trainee na TAESA é mais do que começar: é construir carreira com ...",
+          "company": "TAESA",
+          "url": "https://pt.linkedin.com/posts/taesa_ser-trainee-na-taesa-%C3%A9-mais-do-que-come%C3%A7ar-activity-7431764214513426432-OlXe",
+          "source": "historico",
+          "sourceDomain": "pt.linkedin.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-24",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
           "title": "Taesa",
           "company": "TAESA",
           "url": "https://vagas.taesa.com.br/",
@@ -699,8 +710,8 @@
           "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
         }
       ],
-      "radarCount": 6,
-      "lastSeenAt": "2026-07-20",
+      "radarCount": 7,
+      "lastSeenAt": "2026-07-24",
       "radarStatus": "Sinais recentes"
     },
     {
