@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-24",
+  "updatedAt": "2026-07-25",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -44,6 +44,17 @@
         "SP"
       ],
       "radarMatches": [
+        {
+          "title": "Trainee Hitachi Energy - Empresa multinacional abre inscrições para ...",
+          "company": "Hitachi Energy",
+          "url": "https://www.estagiotrainee.com/post/programa-trainee-hitachi-energy-2026",
+          "source": "historico",
+          "sourceDomain": "estagiotrainee.com",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-25",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
         {
           "title": "O Programa de Estágio Acelera Hitachi Energy 2026 vai impulsionar ...",
           "company": "Hitachi Energy",
@@ -122,8 +133,8 @@
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
-      "radarCount": 7,
-      "lastSeenAt": "2026-07-21",
+      "radarCount": 8,
+      "lastSeenAt": "2026-07-25",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -275,6 +286,17 @@
       ],
       "radarMatches": [
         {
+          "title": "O EDP Global Graduate Program, anteriormente conhecido como ...",
+          "company": "EDP",
+          "url": "https://www.facebook.com/HR.Portugal/posts/o-edp-global-graduate-program-anteriormente-conhecido-como-edp-trainee-program-t/1365292008959193/",
+          "source": "historico",
+          "sourceDomain": "facebook.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-25",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
           "title": "Apply now to EDP's Global Graduate Program 🚀 | Miguel Luís",
           "company": "EDP",
           "url": "https://pt.linkedin.com/posts/mluis_apply-now-to-edps-global-graduate-program-activity-7434251083327115264-lBHU",
@@ -350,21 +372,10 @@
           "priority": 0,
           "date": "2026-07-12",
           "reason": "Possível repetição detectada por titulo_parecido."
-        },
-        {
-          "title": "EDP lança o EDP Global Graduate Program - Jornal Económico",
-          "company": "EDP",
-          "url": "https://jornaleconomico.sapo.pt/noticias/edp-lanca-o-edp-global-graduate-program/",
-          "source": "historico",
-          "sourceDomain": "jornaleconomico.sapo.pt",
-          "status": "monitorar",
-          "priority": 60,
-          "date": "2026-07-11",
-          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-24",
+      "lastSeenAt": "2026-07-25",
       "radarStatus": "Sinais recentes"
     },
     {
