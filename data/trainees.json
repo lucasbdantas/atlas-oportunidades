@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-26",
+  "updatedAt": "2026-07-27",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -44,6 +44,17 @@
         "SP"
       ],
       "radarMatches": [
+        {
+          "title": "Estágio e Trainee na Hitachi Energy",
+          "company": "Hitachi Energy",
+          "url": "https://www.hitachienergy.com/br/pt/careers/about-us/estagio-e-trainee-na-hitachi-energy",
+          "source": "historico",
+          "sourceDomain": "hitachienergy.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-27",
+          "reason": "Possível repetição detectada por empresa_programa."
+        },
         {
           "title": "As inscrições para o Programa de Trainee Hitachi Energy 2026 estão ...",
           "company": "Hitachi Energy",
@@ -120,21 +131,10 @@
           "priority": 75,
           "date": "2026-07-09",
           "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
-        },
-        {
-          "title": "Trainee Hitachi: vagas abertas",
-          "company": "Sejatrainee",
-          "url": "https://sejatrainee.com.br/trainee-hitachi-vagas-abertas/",
-          "source": "historico",
-          "sourceDomain": "sejatrainee.com.br",
-          "status": "nova",
-          "priority": 75,
-          "date": "2026-07-09",
-          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-26",
+      "lastSeenAt": "2026-07-27",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -935,6 +935,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Estagiário Nivel Superior Detalhes da vaga",
+          "company": "CPFL",
+          "url": "https://vagas.cpfl.com.br/job/Campinas-Estagi%C3%A1rio-Nivel-Superior/1334926362/",
+          "source": "historico",
+          "sourceDomain": "vagas.cpfl.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-27",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
           "title": "CPFL Energia abre inscrições em Campinas para o ...",
           "company": "CPFL",
           "url": "https://www.grupocpfl.com.br/noticia/cpfl-energia-abre-inscricoes-em-campinas-para-o-programa-de-estagio-2026",
@@ -1010,21 +1021,10 @@
           "priority": 50,
           "date": "2026-06-18",
           "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
-        },
-        {
-          "title": "Engenharia - CPFL",
-          "company": "CPFL",
-          "url": "https://vagas.cpfl.com.br/go/Engenharia/4651019/",
-          "source": "historico",
-          "sourceDomain": "vagas.cpfl.com.br",
-          "status": "monitorar",
-          "priority": 50,
-          "date": "2026-06-18",
-          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-19",
+      "lastSeenAt": "2026-07-27",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -1053,6 +1053,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Trainee",
+          "company": "Eneva",
+          "url": "https://www.eneva.com.br/carreiras/trainee/",
+          "source": "historico",
+          "sourceDomain": "eneva.com.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-07-27",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
           "title": "Eneva on Instagram: \"Já pensou em se inscrever em um programa ...",
           "company": "Eneva",
           "url": "https://www.instagram.com/reel/DXzO0UDDHbu/?hl=en",
@@ -1075,8 +1086,8 @@
           "reason": "Fonte social/noticia: usar apenas como sinal secundario, sem entrada automatica no Atlas."
         }
       ],
-      "radarCount": 2,
-      "lastSeenAt": "2026-07-13",
+      "radarCount": 3,
+      "lastSeenAt": "2026-07-27",
       "radarStatus": "Sinais recentes"
     },
     {
