@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-27",
+  "updatedAt": "2026-07-28",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -286,6 +286,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Apply now to EDP's Global Graduate Program 🚀",
+          "company": "EDP",
+          "url": "https://www.linkedin.com/posts/edp_apply-now-to-edps-global-graduate-program-activity-7434202914945941504-sj3O",
+          "source": "historico",
+          "sourceDomain": "linkedin.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-28",
+          "reason": "Possível repetição detectada por titulo_parecido."
+        },
+        {
           "title": "O EDP Global Graduate Program, anteriormente conhecido como ...",
           "company": "EDP",
           "url": "https://www.facebook.com/HR.Portugal/posts/o-edp-global-graduate-program-anteriormente-conhecido-como-edp-trainee-program-t/1365292008959193/",
@@ -361,21 +372,10 @@
           "priority": 0,
           "date": "2026-07-13",
           "reason": "Possível repetição detectada por empresa_programa."
-        },
-        {
-          "title": "EDP Global Graduate Program | EDP Brasil",
-          "company": "EDP",
-          "url": "https://pt.linkedin.com/posts/edpbrasil_edp-global-graduate-program-activity-7435267350196547584-7uou",
-          "source": "historico",
-          "sourceDomain": "pt.linkedin.com",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-12",
-          "reason": "Possível repetição detectada por titulo_parecido."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-25",
+      "lastSeenAt": "2026-07-28",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -644,6 +644,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Programa de Trainee Taesa 2026: vagas para profissionais ...",
+          "company": "TAESA",
+          "url": "https://faculdade.grancursosonline.com.br/blog/programa-de-trainee-taesa/",
+          "source": "historico",
+          "sourceDomain": "faculdade.grancursosonline.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-07-28",
+          "reason": "Resultado de agregador ou busca generica; monitorar e procurar candidatura oficial."
+        },
+        {
           "title": "Edital – TAESA trainee",
           "company": "TAESA",
           "url": "https://trainee.taesa.com.br/edital/",
@@ -719,21 +730,10 @@
           "priority": 75,
           "date": "2026-07-09",
           "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
-        },
-        {
-          "title": "TAESA trainee",
-          "company": "TAESA",
-          "url": "https://trainee.taesa.com.br/",
-          "source": "historico",
-          "sourceDomain": "trainee.taesa.com.br",
-          "status": "monitorar",
-          "priority": 50,
-          "date": "2026-07-09",
-          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-26",
+      "lastSeenAt": "2026-07-28",
       "radarStatus": "Sinais recentes"
     },
     {
