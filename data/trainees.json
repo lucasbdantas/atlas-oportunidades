@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-28",
+  "updatedAt": "2026-07-29",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -286,6 +286,17 @@
       ],
       "radarMatches": [
         {
+          "title": "EDP Global Graduate Program | EDP Brasil",
+          "company": "EDP",
+          "url": "https://pt.linkedin.com/posts/edpbrasil_edp-global-graduate-program-activity-7434928852562485248-9ugO",
+          "source": "historico",
+          "sourceDomain": "pt.linkedin.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-07-29",
+          "reason": "Possível repetição detectada por empresa_programa."
+        },
+        {
           "title": "Apply now to EDP's Global Graduate Program 🚀",
           "company": "EDP",
           "url": "https://www.linkedin.com/posts/edp_apply-now-to-edps-global-graduate-program-activity-7434202914945941504-sj3O",
@@ -361,21 +372,10 @@
           "priority": 0,
           "date": "2026-07-14",
           "reason": "Possível repetição detectada por url."
-        },
-        {
-          "title": "EDP Global Graduate Program https://estagiar.pt ...",
-          "company": "EDP",
-          "url": "https://www.facebook.com/estagiar.pt/posts/edp-global-graduate-programhttpsestagiarptedp-global-graduate-programedptraineeg/1379344804231813/",
-          "source": "historico",
-          "sourceDomain": "facebook.com",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-13",
-          "reason": "Possível repetição detectada por empresa_programa."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-28",
+      "lastSeenAt": "2026-07-29",
       "radarStatus": "Sinais recentes"
     },
     {
