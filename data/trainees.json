@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-30",
+  "updatedAt": "2026-07-31",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -1119,6 +1119,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Itaú Trainee",
+          "company": "Itaú",
+          "url": "https://www.youtube.com/playlist?list=PL34w81iXr8CuUGy90mE0vtJ9bC-1wDE8V",
+          "source": "historico",
+          "sourceDomain": "youtube.com",
+          "status": "monitorar",
+          "priority": 30,
+          "date": "2026-07-31",
+          "reason": "Fonte social/noticia: usar apenas como sinal secundario, sem entrada automatica no Atlas."
+        },
+        {
           "title": "Everything about the Itaú BBA Trainee program with Raquel Enchn",
           "company": "Itaú",
           "url": "https://www.youtube.com/watch?v=RfyLFVmroR4",
@@ -1194,21 +1205,10 @@
           "priority": 75,
           "date": "2026-07-17",
           "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
-        },
-        {
-          "title": "Trainee Itaú Unibanco 2026",
-          "company": "Itau",
-          "url": "https://traineeitauunibanco.com.br/",
-          "source": "historico",
-          "sourceDomain": "traineeitauunibanco.com.br",
-          "status": "monitorar",
-          "priority": 50,
-          "date": "2026-07-17",
-          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-26",
+      "lastSeenAt": "2026-07-31",
       "radarStatus": "Sinais recentes"
     },
     {
