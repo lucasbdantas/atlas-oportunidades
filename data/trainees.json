@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-31",
+  "updatedAt": "2026-08-01",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -44,6 +44,17 @@
         "SP"
       ],
       "radarMatches": [
+        {
+          "title": "Programa Trainee Hitachi Energy 2023",
+          "company": "Hitachi Energy",
+          "url": "https://vagas.ciadetalentos.com.br/hotsite/traineehitachienergy2023?utm_source=Social&utm_medium=Indeed&utm_campaign=Hitachi_CT_Trainee_2023-1_Social_Indeed__10082023",
+          "source": "historico",
+          "sourceDomain": "vagas.ciadetalentos.com.br",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-01",
+          "reason": "Possível repetição detectada por titulo_parecido."
+        },
         {
           "title": "Estágio e Trainee na Hitachi Energy",
           "company": "Hitachi Energy",
@@ -120,21 +131,10 @@
           "priority": 87,
           "date": "2026-07-10",
           "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
-        },
-        {
-          "title": "Estágio e Trainee na Hitachi Energy",
-          "company": "Hitachi Energy",
-          "url": "https://www.hitachienergy.com/br/pt/careers/estagio-na-hitachi-energy",
-          "source": "historico",
-          "sourceDomain": "hitachienergy.com",
-          "status": "nova",
-          "priority": 75,
-          "date": "2026-07-09",
-          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-27",
+      "lastSeenAt": "2026-08-01",
       "radarStatus": "Sinais recentes"
     },
     {
