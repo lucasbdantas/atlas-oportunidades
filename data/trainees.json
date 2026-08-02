@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-01",
+  "updatedAt": "2026-08-02",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -44,6 +44,17 @@
         "SP"
       ],
       "radarMatches": [
+        {
+          "title": "Programa de Estágio Acelera",
+          "company": "Hitachienergy",
+          "url": "https://www.hitachienergy.com/campaigns/careers/acelera-program",
+          "source": "historico",
+          "sourceDomain": "hitachienergy.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-02",
+          "reason": "Possível repetição detectada por titulo_parecido."
+        },
         {
           "title": "Programa Trainee Hitachi Energy 2023",
           "company": "Hitachi Energy",
@@ -120,21 +131,10 @@
           "priority": 60,
           "date": "2026-07-18",
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
-        },
-        {
-          "title": "Programa de Estágio Acelera Hitachi Energy 2026",
-          "company": "Hitachi Energy",
-          "url": "https://www.hitachienergy.com/br/pt/careers/programa-de-est-gio-acelera-hitachi-energy-2026",
-          "source": "historico",
-          "sourceDomain": "hitachienergy.com",
-          "status": "nova",
-          "priority": 87,
-          "date": "2026-07-10",
-          "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-01",
+      "lastSeenAt": "2026-08-02",
       "radarStatus": "Sinais recentes"
     },
     {
