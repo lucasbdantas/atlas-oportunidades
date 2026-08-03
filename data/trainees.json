@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-02",
+  "updatedAt": "2026-08-03",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -1267,10 +1267,22 @@
         "general management",
         "marca"
       ],
-      "radarMatches": [],
-      "radarCount": 0,
-      "lastSeenAt": "",
-      "radarStatus": "Monitorar"
+      "radarMatches": [
+        {
+          "title": "Programa Trainee Nestlé 2027",
+          "company": "Amostras",
+          "url": "https://amostras.euqueronestle.com.br/traineenestle/",
+          "source": "historico",
+          "sourceDomain": "amostras.euqueronestle.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-08-03",
+          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
+        }
+      ],
+      "radarCount": 1,
+      "lastSeenAt": "2026-08-03",
+      "radarStatus": "Sinais recentes"
     },
     {
       "id": "raizen",
