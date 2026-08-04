@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-03",
+  "updatedAt": "2026-08-04",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -286,6 +286,17 @@
       ],
       "radarMatches": [
         {
+          "title": "EDP Trainee Program opens global applications for paid internships",
+          "company": "EDP",
+          "url": "https://edp.com/en/media/news/edp-trainee-program-opens-global-applications-paid-internships",
+          "source": "historico",
+          "sourceDomain": "edp.com",
+          "status": "nova",
+          "priority": 87,
+          "date": "2026-08-04",
+          "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
+        },
+        {
           "title": "EDP Global Graduate Program | EDP Brasil",
           "company": "EDP",
           "url": "https://pt.linkedin.com/posts/edpbrasil_edp-global-graduate-program-activity-7434928852562485248-9ugO",
@@ -361,21 +372,10 @@
           "priority": 60,
           "date": "2026-07-14",
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
-        },
-        {
-          "title": "Global EDP Trainee Program",
-          "company": "EDP",
-          "url": "https://www.linkedin.com/pulse/global-edp-trainee-program-miguel-lu%C3%ADs",
-          "source": "historico",
-          "sourceDomain": "linkedin.com",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-14",
-          "reason": "Possível repetição detectada por url."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-29",
+      "lastSeenAt": "2026-08-04",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -1119,6 +1119,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Busca de vagas - Itaú Carreiras",
+          "company": "Itau",
+          "url": "https://carreiras.itau.com.br/busca-de-vagas",
+          "source": "historico",
+          "sourceDomain": "carreiras.itau.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-08-04",
+          "reason": "Resultado de agregador ou busca generica; monitorar e procurar candidatura oficial."
+        },
+        {
           "title": "Itaú Trainee",
           "company": "Itaú",
           "url": "https://www.youtube.com/playlist?list=PL34w81iXr8CuUGy90mE0vtJ9bC-1wDE8V",
@@ -1194,21 +1205,10 @@
           "priority": 75,
           "date": "2026-07-19",
           "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
-        },
-        {
-          "title": "programa de trainee itaú bba",
-          "company": "Itau",
-          "url": "https://www.estagio.ufv.br/sem-categoria/programa-de-trainee-itau-unibanco-e-trainee-itau-bba/",
-          "source": "historico",
-          "sourceDomain": "estagio.ufv.br",
-          "status": "nova",
-          "priority": 75,
-          "date": "2026-07-17",
-          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-31",
+      "lastSeenAt": "2026-08-04",
       "radarStatus": "Sinais recentes"
     },
     {
