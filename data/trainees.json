@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-04",
+  "updatedAt": "2026-08-05",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
