@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-05",
+  "updatedAt": "2026-08-06",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -644,6 +644,17 @@
       ],
       "radarMatches": [
         {
+          "title": "♦PROGRAMA TRAINEE TAESA! Está no ar o ...",
+          "company": "TAESA",
+          "url": "https://www.instagram.com/p/DUIwaTnjfiV/?hl",
+          "source": "historico",
+          "sourceDomain": "instagram.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-06",
+          "reason": "Possível repetição detectada por empresa_programa."
+        },
+        {
           "title": "Programa de Trainee Taesa 2026: vagas para profissionais ...",
           "company": "TAESA",
           "url": "https://faculdade.grancursosonline.com.br/blog/programa-de-trainee-taesa/",
@@ -719,21 +730,10 @@
           "priority": 0,
           "date": "2026-07-10",
           "reason": "Possível repetição detectada por url."
-        },
-        {
-          "title": "Trainee Taesa: vagas abertas",
-          "company": "TAESA",
-          "url": "https://sejatrainee.com.br/trainee-taesa-vagas-abertas/",
-          "source": "historico",
-          "sourceDomain": "sejatrainee.com.br",
-          "status": "nova",
-          "priority": 75,
-          "date": "2026-07-09",
-          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-28",
+      "lastSeenAt": "2026-08-06",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -1119,6 +1119,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Itaú Trainee",
+          "company": "Itaú",
+          "url": "https://www.youtube.com/playlist?list",
+          "source": "historico",
+          "sourceDomain": "youtube.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-06",
+          "reason": "Possível repetição detectada por empresa_programa."
+        },
+        {
           "title": "Busca de vagas - Itaú Carreiras",
           "company": "Itau",
           "url": "https://carreiras.itau.com.br/busca-de-vagas",
@@ -1194,21 +1205,10 @@
           "priority": 50,
           "date": "2026-07-21",
           "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
-        },
-        {
-          "title": "Recrutadora do Itaú BBA fala sobre o programa de trainee",
-          "company": "Itau",
-          "url": "https://napratica.org.br/noticias/trainee-do-itau-bba-recrutadora-fala-sobre-o-programa",
-          "source": "historico",
-          "sourceDomain": "napratica.org.br",
-          "status": "nova",
-          "priority": 75,
-          "date": "2026-07-19",
-          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-04",
+      "lastSeenAt": "2026-08-06",
       "radarStatus": "Sinais recentes"
     },
     {
