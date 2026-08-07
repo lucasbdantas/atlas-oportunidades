@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-06",
+  "updatedAt": "2026-08-07",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -406,6 +406,17 @@
       ],
       "radarMatches": [
         {
+          "title": "ISA ENERGIA BRASIL recebe inscrições para o Programa de ...",
+          "company": "ISA Energia",
+          "url": "https://www.facebook.com/revistaengenharia/posts/isa-energia-brasil-recebe-inscri%C3%A7%C3%B5es-para-o-programa-de-trainee-2026s%C3%A3o-paulo-13/835328908834135/",
+          "source": "historico",
+          "sourceDomain": "facebook.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-07",
+          "reason": "Possível repetição detectada por titulo_parecido."
+        },
+        {
           "title": "\"Quem vier para a ISA ENERGIA BRASIL tem que estar disposto a ...",
           "company": "ISA Energia",
           "url": "https://www.instagram.com/reel/DPRjVrAEm7z/",
@@ -481,21 +492,10 @@
           "priority": 0,
           "date": "2026-07-09",
           "reason": "Possível repetição detectada por titulo_parecido."
-        },
-        {
-          "title": "Programa Trainee 2026 | ISA ENERGIA BRASIL",
-          "company": "ISA Energia",
-          "url": "https://www.isaenergiabrasil.com.br/carreiras/programa-trainee/",
-          "source": "historico",
-          "sourceDomain": "isaenergiabrasil.com.br",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-09",
-          "reason": "Possível repetição detectada por titulo_parecido."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-15",
+      "lastSeenAt": "2026-08-07",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -646,6 +646,17 @@
         {
           "title": "♦PROGRAMA TRAINEE TAESA! Está no ar o ...",
           "company": "TAESA",
+          "url": "https://www.instagram.com/p/DUIwaTnjfiV/?hl=en",
+          "source": "historico",
+          "sourceDomain": "instagram.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-07",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
+          "title": "♦PROGRAMA TRAINEE TAESA! Está no ar o ...",
+          "company": "TAESA",
           "url": "https://www.instagram.com/p/DUIwaTnjfiV/?hl",
           "source": "historico",
           "sourceDomain": "instagram.com",
@@ -719,21 +730,10 @@
           "priority": 0,
           "date": "2026-07-10",
           "reason": "Possível repetição detectada por url."
-        },
-        {
-          "title": "Está no ar o Programa Trainee TAESA! Uma jornada ... - Instagram",
-          "company": "TAESA",
-          "url": "https://www.instagram.com/p/DUHfTvjADuY/",
-          "source": "historico",
-          "sourceDomain": "instagram.com",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-10",
-          "reason": "Possível repetição detectada por url."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-06",
+      "lastSeenAt": "2026-08-07",
       "radarStatus": "Sinais recentes"
     },
     {
