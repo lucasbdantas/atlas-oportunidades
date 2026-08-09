@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-08",
+  "updatedAt": "2026-08-09",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -44,6 +44,17 @@
         "SP"
       ],
       "radarMatches": [
+        {
+          "title": "Programa de Trainee Hitachi Energy 2026 Acelere sua ...",
+          "company": "Hitachi Energy",
+          "url": "https://www.instagram.com/p/DbvlIh2le95/",
+          "source": "historico",
+          "sourceDomain": "instagram.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-09",
+          "reason": "Possível repetição detectada por titulo_parecido."
+        },
         {
           "title": "Trainee - Myworkdayjobs.com",
           "company": "Hitachi",
@@ -120,21 +131,10 @@
           "priority": 75,
           "date": "2026-07-25",
           "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
-        },
-        {
-          "title": "O Programa de Estágio Acelera Hitachi Energy 2026 vai impulsionar ...",
-          "company": "Hitachi Energy",
-          "url": "https://www.instagram.com/p/DPmWjm6Dg3X/",
-          "source": "historico",
-          "sourceDomain": "instagram.com",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-21",
-          "reason": "Possível repetição detectada por titulo_parecido."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-08",
+      "lastSeenAt": "2026-08-09",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -406,6 +406,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Sua carreira pode começar na ISA ENERGIA BRASIL. 💙 O ...",
+          "company": "ISA Energia",
+          "url": "https://www.facebook.com/isaenergiabrasil/videos/sua-carreira-pode-come%C3%A7ar-na-isa-energia-brasil-o-programa-de-est%C3%A1gio-isa-energi/2079097629707536/",
+          "source": "historico",
+          "sourceDomain": "facebook.com",
+          "status": "monitorar",
+          "priority": 30,
+          "date": "2026-08-09",
+          "reason": "Fonte social/noticia: usar apenas como sinal secundario, sem entrada automatica no Atlas."
+        },
+        {
           "title": "ISA ENERGIA BRASIL recebe inscrições para o Programa de ...",
           "company": "ISA Energia",
           "url": "https://www.facebook.com/revistaengenharia/posts/isa-energia-brasil-recebe-inscri%C3%A7%C3%B5es-para-o-programa-de-trainee-2026s%C3%A3o-paulo-13/835328908834135/",
@@ -481,21 +492,10 @@
           "priority": 75,
           "date": "2026-07-09",
           "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
-        },
-        {
-          "title": "isa PROGRAMA DE TRAINEE 2026 ISA ENERGIA BRASIL ...",
-          "company": "ISA Energia",
-          "url": "https://www.instagram.com/p/DOwQ6eziShS/",
-          "source": "historico",
-          "sourceDomain": "instagram.com",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-09",
-          "reason": "Possível repetição detectada por titulo_parecido."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-07",
+      "lastSeenAt": "2026-08-09",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -815,6 +815,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Search Student and Graduate Opportunity Jobs | Siemens Energy",
+          "company": "Siemens Energy",
+          "url": "https://jobs.siemens-energy.com/en_US/jobs/SearchJobsStudents",
+          "source": "historico",
+          "sourceDomain": "jobs.siemens-energy.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-09",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
           "title": "Siemens Energy oferece mais de 70 vagas de estágio em diversas áreas",
           "company": "Siemens Energy",
           "url": "https://www.siemens-energy.com/br/pt/home/press-releases/siemens-energy-oferece-mais-de-70-vagas-de-estagio-em-diversas-areas.html",
@@ -890,21 +901,10 @@
           "priority": 45,
           "date": "2026-07-09",
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
-        },
-        {
-          "title": "Siemens Energy - Careers Marketplace",
-          "company": "Siemens Energy",
-          "url": "https://jobs.siemens-energy.com/",
-          "source": "historico",
-          "sourceDomain": "jobs.siemens-energy.com",
-          "status": "monitorar",
-          "priority": 45,
-          "date": "2026-07-09",
-          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-08",
+      "lastSeenAt": "2026-08-09",
       "radarStatus": "Sinais recentes"
     },
     {
