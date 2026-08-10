@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-09",
+  "updatedAt": "2026-08-10",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -44,6 +44,17 @@
         "SP"
       ],
       "radarMatches": [
+        {
+          "title": "Early Career Programs",
+          "company": "Hitachienergy",
+          "url": "https://www.hitachienergy.com/us/en/careers/about-us/early-career",
+          "source": "historico",
+          "sourceDomain": "hitachienergy.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-10",
+          "reason": "Possível repetição detectada por empresa_programa."
+        },
         {
           "title": "Programa de Trainee Hitachi Energy 2026 Acelere sua ...",
           "company": "Hitachi Energy",
@@ -120,21 +131,10 @@
           "priority": 0,
           "date": "2026-07-26",
           "reason": "Possível repetição detectada por titulo_parecido."
-        },
-        {
-          "title": "Trainee Hitachi Energy - Empresa multinacional abre inscrições para ...",
-          "company": "Hitachi Energy",
-          "url": "https://www.estagiotrainee.com/post/programa-trainee-hitachi-energy-2026",
-          "source": "historico",
-          "sourceDomain": "estagiotrainee.com",
-          "status": "nova",
-          "priority": 75,
-          "date": "2026-07-25",
-          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-09",
+      "lastSeenAt": "2026-08-10",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -406,6 +406,39 @@
       ],
       "radarMatches": [
         {
+          "title": "Careers | ISA ENERGIA BRASIL",
+          "company": "ISA Energia",
+          "url": "https://www.isaenergiabrasil.com.br/en/careers/",
+          "source": "historico",
+          "sourceDomain": "isaenergiabrasil.com.br",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-08-10",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
+          "title": "Sua carreira pode começar na ISA ENERGIA BRASIL.  O ...",
+          "company": "ISA Energia",
+          "url": "https://www.instagram.com/reel/DbttY14xrS3/",
+          "source": "historico",
+          "sourceDomain": "instagram.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-10",
+          "reason": "Possível repetição detectada por empresa_programa."
+        },
+        {
+          "title": "Internship program - ISA ENERGIA BRASIL",
+          "company": "ISA Energia",
+          "url": "https://www.isaenergiabrasil.com.br/en/careers/internship-program/",
+          "source": "historico",
+          "sourceDomain": "isaenergiabrasil.com.br",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-10",
+          "reason": "Possível repetição detectada por titulo_parecido."
+        },
+        {
           "title": "Sua carreira pode começar na ISA ENERGIA BRASIL. 💙 O ...",
           "company": "ISA Energia",
           "url": "https://www.facebook.com/isaenergiabrasil/videos/sua-carreira-pode-come%C3%A7ar-na-isa-energia-brasil-o-programa-de-est%C3%A1gio-isa-energi/2079097629707536/",
@@ -459,43 +492,10 @@
           "priority": 0,
           "date": "2026-07-11",
           "reason": "Possível repetição detectada por url."
-        },
-        {
-          "title": "Trainee Program - ISA ENERGIA BRASIL",
-          "company": "ISA Energia",
-          "url": "https://www.isaenergiabrasil.com.br/en/careers/trainee-program/",
-          "source": "historico",
-          "sourceDomain": "isaenergiabrasil.com.br",
-          "status": "nova",
-          "priority": 75,
-          "date": "2026-07-09",
-          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
-        },
-        {
-          "title": "Trainee Isa Energia: vagas abertas",
-          "company": "ISA Energia",
-          "url": "https://sejatrainee.com.br/trainee-isa-energia-vagas-abertas/",
-          "source": "historico",
-          "sourceDomain": "sejatrainee.com.br",
-          "status": "nova",
-          "priority": 75,
-          "date": "2026-07-09",
-          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
-        },
-        {
-          "title": "ISA ENERGIA BRASIL abre inscrições para o Programa de Trainee ...",
-          "company": "ISA Energia",
-          "url": "https://www.isaenergiabrasil.com.br/centro-de-midia/noticias/isa-energia-brasil-abre-inscricoes-para-o-programa-de-trainee-2026/",
-          "source": "historico",
-          "sourceDomain": "isaenergiabrasil.com.br",
-          "status": "nova",
-          "priority": 75,
-          "date": "2026-07-09",
-          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-09",
+      "lastSeenAt": "2026-08-10",
       "radarStatus": "Sinais recentes"
     },
     {
