@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-10",
+  "updatedAt": "2026-08-11",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -44,6 +44,17 @@
         "SP"
       ],
       "radarMatches": [
+        {
+          "title": "Programa Trainee Hitachi Energy 2023",
+          "company": "Hitachi Energy",
+          "url": "https://vagas.ciadetalentos.com.br/hotsite/traineehitachienergy2023?utm_source",
+          "source": "historico",
+          "sourceDomain": "vagas.ciadetalentos.com.br",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-11",
+          "reason": "Possível repetição detectada por url."
+        },
         {
           "title": "Early Career Programs",
           "company": "Hitachienergy",
@@ -120,21 +131,10 @@
           "priority": 0,
           "date": "2026-07-26",
           "reason": "Possível repetição detectada por url."
-        },
-        {
-          "title": "As inscrições para o Programa de Trainee da Hitachi Energy ...",
-          "company": "Hitachi Energy",
-          "url": "https://www.instagram.com/p/DNTZ9mYz3VG/",
-          "source": "historico",
-          "sourceDomain": "instagram.com",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-26",
-          "reason": "Possível repetição detectada por titulo_parecido."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-10",
+      "lastSeenAt": "2026-08-11",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -286,6 +286,17 @@
       ],
       "radarMatches": [
         {
+          "title": "EDP Global Graduate Program | Miguel Stilwell d'Andrade",
+          "company": "EDP",
+          "url": "https://www.linkedin.com/posts/mstilwellandrade_edp-global-graduate-program-activity-7437837918469181440-mpbq",
+          "source": "historico",
+          "sourceDomain": "linkedin.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-11",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
           "title": "EDP Trainee Program opens global applications for paid internships",
           "company": "EDP",
           "url": "https://edp.com/en/media/news/edp-trainee-program-opens-global-applications-paid-internships",
@@ -361,21 +372,10 @@
           "priority": 60,
           "date": "2026-07-17",
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
-        },
-        {
-          "title": "EDP lanza el Global Graduate Program para jóvenes que quieran ...",
-          "company": "EDP",
-          "url": "https://elperiodicodelaenergia.com/edp-lanza-el-global-graduate-program-para-jovenes-que-quieran-construir-el-futuro-de-la-energia/",
-          "source": "historico",
-          "sourceDomain": "elperiodicodelaenergia.com",
-          "status": "monitorar",
-          "priority": 60,
-          "date": "2026-07-14",
-          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-04",
+      "lastSeenAt": "2026-08-11",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -405,6 +405,17 @@
         "infraestrutura"
       ],
       "radarMatches": [
+        {
+          "title": "Programa de Trainee 2026 | ISA ENERGIA BRASIL",
+          "company": "ISA Energia",
+          "url": "https://pt.linkedin.com/posts/isaenergiabrasil_programa-de-trainee-2026-activity-7379862826598776833-EQi7",
+          "source": "historico",
+          "sourceDomain": "pt.linkedin.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-11",
+          "reason": "Possível repetição detectada por empresa_programa."
+        },
         {
           "title": "Careers | ISA ENERGIA BRASIL",
           "company": "ISA Energia",
@@ -481,21 +492,10 @@
           "priority": 50,
           "date": "2026-07-14",
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
-        },
-        {
-          "title": "\"Eu sou Trainee ISA ENERGIA BRASIL e é claro que ... - Instagram",
-          "company": "ISA Energia",
-          "url": "https://www.instagram.com/reel/DPgoEsFDGJ-/",
-          "source": "historico",
-          "sourceDomain": "instagram.com",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-11",
-          "reason": "Possível repetição detectada por url."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-10",
+      "lastSeenAt": "2026-08-11",
       "radarStatus": "Sinais recentes"
     },
     {
