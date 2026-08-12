@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-11",
+  "updatedAt": "2026-08-12",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -815,6 +815,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Search Information Technology Jobs | Siemens Energy",
+          "company": "Siemens Energy",
+          "url": "https://jobs.siemens-energy.com/en_US/jobs/SearchJobsIT",
+          "source": "historico",
+          "sourceDomain": "jobs.siemens-energy.com",
+          "status": "monitorar",
+          "priority": 60,
+          "date": "2026-08-12",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
           "title": "Search Student and Graduate Opportunity Jobs | Siemens Energy",
           "company": "Siemens Energy",
           "url": "https://jobs.siemens-energy.com/en_US/jobs/SearchJobsStudents",
@@ -890,21 +901,10 @@
           "priority": 60,
           "date": "2026-07-09",
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
-        },
-        {
-          "title": "Working at Siemens Energy | Careers & Job Opportunities",
-          "company": "Siemens Energy",
-          "url": "https://www.siemens-energy.com/us/en/home/careers/working-with-us.html",
-          "source": "historico",
-          "sourceDomain": "siemens-energy.com",
-          "status": "monitorar",
-          "priority": 45,
-          "date": "2026-07-09",
-          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-09",
+      "lastSeenAt": "2026-08-12",
       "radarStatus": "Sinais recentes"
     },
     {
