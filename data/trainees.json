@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-12",
+  "updatedAt": "2026-08-13",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -935,6 +935,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Programa de Estágio CPFL 2027",
+          "company": "CPFL",
+          "url": "https://programaestagiocpfl.com.br/",
+          "source": "historico",
+          "sourceDomain": "programaestagiocpfl.com.br",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-13",
+          "reason": "Possível repetição detectada por titulo_parecido."
+        },
+        {
           "title": "Estagiário Nivel Superior Detalhes da vaga",
           "company": "CPFL",
           "url": "https://vagas.cpfl.com.br/job/Campinas-Estagi%C3%A1rio-Nivel-Superior/1334926362/",
@@ -1010,21 +1021,10 @@
           "priority": 75,
           "date": "2026-06-29",
           "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
-        },
-        {
-          "title": "Ainda dá tempo de se inscrever no Programa de Estágio CPFL ...",
-          "company": "CPFL",
-          "url": "https://www.instagram.com/reel/DSFzw3ZEcpi/",
-          "source": "historico",
-          "sourceDomain": "instagram.com",
-          "status": "monitorar",
-          "priority": 50,
-          "date": "2026-06-18",
-          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-27",
+      "lastSeenAt": "2026-08-13",
       "radarStatus": "Sinais recentes"
     },
     {
