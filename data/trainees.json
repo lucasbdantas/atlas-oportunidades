@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-13",
+  "updatedAt": "2026-08-14",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -44,6 +44,17 @@
         "SP"
       ],
       "radarMatches": [
+        {
+          "title": "Programa de Trainee Hitachi Energy 2026 - 1MiO",
+          "company": "Hitachi Energy",
+          "url": "https://1mio.com.br/vagas/721361",
+          "source": "historico",
+          "sourceDomain": "1mio.com.br",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-14",
+          "reason": "Possível repetição detectada por titulo_parecido."
+        },
         {
           "title": "Programa Trainee Hitachi Energy 2023",
           "company": "Hitachi Energy",
@@ -120,21 +131,10 @@
           "priority": 0,
           "date": "2026-07-27",
           "reason": "Possível repetição detectada por empresa_programa."
-        },
-        {
-          "title": "As inscrições para o Programa de Trainee Hitachi Energy 2026 estão ...",
-          "company": "Hitachi Energy",
-          "url": "https://www.instagram.com/p/DbJtKKflgTW/",
-          "source": "historico",
-          "sourceDomain": "instagram.com",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-26",
-          "reason": "Possível repetição detectada por url."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-11",
+      "lastSeenAt": "2026-08-14",
       "radarStatus": "Sinais recentes"
     },
     {
