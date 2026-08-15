@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-14",
+  "updatedAt": "2026-08-15",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -406,6 +406,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Programa de Estágio ISA ENERGIA BRASIL 2027",
+          "company": "ISA Energia",
+          "url": "https://programadeestagioisaenergiabr.gupy.io/",
+          "source": "historico",
+          "sourceDomain": "programadeestagioisaenergiabr.gupy.io",
+          "status": "nova",
+          "priority": 87,
+          "date": "2026-08-15",
+          "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
+        },
+        {
           "title": "Programa de Trainee 2026 | ISA ENERGIA BRASIL",
           "company": "ISA Energia",
           "url": "https://pt.linkedin.com/posts/isaenergiabrasil_programa-de-trainee-2026-activity-7379862826598776833-EQi7",
@@ -481,21 +492,10 @@
           "priority": 0,
           "date": "2026-07-15",
           "reason": "Possível repetição detectada por url."
-        },
-        {
-          "title": "ISA ENERGIA BRASIL | Carreiras",
-          "company": "ISA Energia",
-          "url": "https://www.isaenergiabrasil.com.br/carreiras/",
-          "source": "historico",
-          "sourceDomain": "isaenergiabrasil.com.br",
-          "status": "monitorar",
-          "priority": 50,
-          "date": "2026-07-14",
-          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-11",
+      "lastSeenAt": "2026-08-15",
       "radarStatus": "Sinais recentes"
     },
     {
