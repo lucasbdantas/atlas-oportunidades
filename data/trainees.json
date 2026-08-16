@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-15",
+  "updatedAt": "2026-08-16",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -44,6 +44,17 @@
         "SP"
       ],
       "radarMatches": [
+        {
+          "title": "Trainee - Hitachi - Built In",
+          "company": "Builtin",
+          "url": "https://builtin.com/job/trainee/10540652",
+          "source": "historico",
+          "sourceDomain": "builtin.com",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-08-16",
+          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
+        },
         {
           "title": "Programa de Trainee Hitachi Energy 2026 - 1MiO",
           "company": "Hitachi Energy",
@@ -120,21 +131,10 @@
           "priority": 0,
           "date": "2026-08-01",
           "reason": "Possível repetição detectada por titulo_parecido."
-        },
-        {
-          "title": "Estágio e Trainee na Hitachi Energy",
-          "company": "Hitachi Energy",
-          "url": "https://www.hitachienergy.com/br/pt/careers/about-us/estagio-e-trainee-na-hitachi-energy",
-          "source": "historico",
-          "sourceDomain": "hitachienergy.com",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-27",
-          "reason": "Possível repetição detectada por empresa_programa."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-14",
+      "lastSeenAt": "2026-08-16",
       "radarStatus": "Sinais recentes"
     },
     {
