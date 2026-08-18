@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-17",
+  "updatedAt": "2026-08-18",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -406,6 +406,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Programa Trainee ISA Energia 2027",
+          "company": "ISA Energia",
+          "url": "https://isaenergiabrasil.ves.jobs/?utm=SejaTrainee",
+          "source": "historico",
+          "sourceDomain": "isaenergiabrasil.ves.jobs",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-18",
+          "reason": "Possível repetição detectada por titulo_parecido."
+        },
+        {
           "title": "Programa de Estágio ISA ENERGIA BRASIL 2027",
           "company": "ISA Energia",
           "url": "https://programadeestagioisaenergiabr.gupy.io/",
@@ -481,21 +492,10 @@
           "priority": 0,
           "date": "2026-08-07",
           "reason": "Possível repetição detectada por titulo_parecido."
-        },
-        {
-          "title": "\"Quem vier para a ISA ENERGIA BRASIL tem que estar disposto a ...",
-          "company": "ISA Energia",
-          "url": "https://www.instagram.com/reel/DPRjVrAEm7z/",
-          "source": "historico",
-          "sourceDomain": "instagram.com",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-15",
-          "reason": "Possível repetição detectada por url."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-15",
+      "lastSeenAt": "2026-08-18",
       "radarStatus": "Sinais recentes"
     },
     {
