@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-18",
+  "updatedAt": "2026-08-19",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -44,6 +44,17 @@
         "SP"
       ],
       "radarMatches": [
+        {
+          "title": "Programmes de début de carrière - Hitachi Energy",
+          "company": "Hitachi Energy",
+          "url": "https://www.hitachienergy.com/ch/fr/careers/about-us/early-career",
+          "source": "historico",
+          "sourceDomain": "hitachienergy.com",
+          "status": "monitorar",
+          "priority": 50,
+          "date": "2026-08-19",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
         {
           "title": "Trainee - Hitachi - Built In",
           "company": "Builtin",
@@ -120,21 +131,10 @@
           "priority": 0,
           "date": "2026-08-02",
           "reason": "Possível repetição detectada por titulo_parecido."
-        },
-        {
-          "title": "Programa Trainee Hitachi Energy 2023",
-          "company": "Hitachi Energy",
-          "url": "https://vagas.ciadetalentos.com.br/hotsite/traineehitachienergy2023?utm_source=Social&utm_medium=Indeed&utm_campaign=Hitachi_CT_Trainee_2023-1_Social_Indeed__10082023",
-          "source": "historico",
-          "sourceDomain": "vagas.ciadetalentos.com.br",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-08-01",
-          "reason": "Possível repetição detectada por titulo_parecido."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-16",
+      "lastSeenAt": "2026-08-19",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -286,6 +286,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Start your career - Job Opportunities",
+          "company": "EDP",
+          "url": "https://edp.com/en/careers/job-opportunities/start-your-career",
+          "source": "historico",
+          "sourceDomain": "edp.com",
+          "status": "monitorar",
+          "priority": 60,
+          "date": "2026-08-19",
+          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
+        },
+        {
           "title": "EDP Global Graduate Program | Miguel Stilwell d'Andrade",
           "company": "EDP",
           "url": "https://www.linkedin.com/posts/mstilwellandrade_edp-global-graduate-program-activity-7437837918469181440-mpbq",
@@ -361,21 +372,10 @@
           "priority": 0,
           "date": "2026-07-18",
           "reason": "Possível repetição detectada por empresa_programa."
-        },
-        {
-          "title": "EDP launches global graduate program for STEM and management ...",
-          "company": "EDP",
-          "url": "https://devs.com.pt/en/news/edp-launches-global-graduate-program-for-stem-and-management-graduates",
-          "source": "historico",
-          "sourceDomain": "devs.com.pt",
-          "status": "monitorar",
-          "priority": 60,
-          "date": "2026-07-17",
-          "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-11",
+      "lastSeenAt": "2026-08-19",
       "radarStatus": "Sinais recentes"
     },
     {
