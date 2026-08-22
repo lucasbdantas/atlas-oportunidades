@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-21",
+  "updatedAt": "2026-08-22",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -408,6 +408,17 @@
         {
           "title": "Programa Trainee ISA Energia 2027",
           "company": "ISA Energia",
+          "url": "https://isaenergiabrasil.ves.jobs/?utm",
+          "source": "historico",
+          "sourceDomain": "isaenergiabrasil.ves.jobs",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-22",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
+          "title": "Programa Trainee ISA Energia 2027",
+          "company": "ISA Energia",
           "url": "https://isaenergiabrasil.ves.jobs/?utm=SejaTrainee",
           "source": "historico",
           "sourceDomain": "isaenergiabrasil.ves.jobs",
@@ -481,21 +492,10 @@
           "priority": 30,
           "date": "2026-08-09",
           "reason": "Fonte social/noticia: usar apenas como sinal secundario, sem entrada automatica no Atlas."
-        },
-        {
-          "title": "ISA ENERGIA BRASIL recebe inscrições para o Programa de ...",
-          "company": "ISA Energia",
-          "url": "https://www.facebook.com/revistaengenharia/posts/isa-energia-brasil-recebe-inscri%C3%A7%C3%B5es-para-o-programa-de-trainee-2026s%C3%A3o-paulo-13/835328908834135/",
-          "source": "historico",
-          "sourceDomain": "facebook.com",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-08-07",
-          "reason": "Possível repetição detectada por titulo_parecido."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-18",
+      "lastSeenAt": "2026-08-22",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -1119,6 +1119,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Itaú Unibanco Trainee Program 2025 – Learn more about the ... - YouTube",
+          "company": "Itaú",
+          "url": "https://www.youtube.com/watch?v=xyC9b4_Xy0Q",
+          "source": "historico",
+          "sourceDomain": "youtube.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-22",
+          "reason": "Possível repetição detectada por url."
+        },
+        {
           "title": "Itaú abre inscrições para Programa Trainee 2027, com bolsas de R ...",
           "company": "Itau",
           "url": "https://www.folhape.com.br/economia/itau-abre-inscricoes-para-programa-trainee-2027-com-bolsas-de-r/504993/",
@@ -1194,21 +1205,10 @@
           "priority": 50,
           "date": "2026-07-21",
           "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
-        },
-        {
-          "title": "Itaú Private Bank",
-          "company": "Itau",
-          "url": "https://www.itauprivatebank.com/",
-          "source": "historico",
-          "sourceDomain": "itauprivatebank.com",
-          "status": "monitorar",
-          "priority": 50,
-          "date": "2026-07-21",
-          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-08",
+      "lastSeenAt": "2026-08-22",
       "radarStatus": "Sinais recentes"
     },
     {
