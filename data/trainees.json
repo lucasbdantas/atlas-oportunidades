@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-25",
+  "updatedAt": "2026-08-26",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -165,6 +165,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Banco de Talentos Neoenergia: Estágio Nível Superior e ...",
+          "company": "Neoenergia",
+          "url": "https://iberdrola.wd3.myworkdayjobs.com/en-US/iberdrola/job/Banco-de-Talentos-Neoenergia--Estgio-Nvel-Superior-e-Tcnico_R-28385/apply/autofillWithResume",
+          "source": "historico",
+          "sourceDomain": "iberdrola.wd3.myworkdayjobs.com",
+          "status": "nova",
+          "priority": 87,
+          "date": "2026-08-26",
+          "reason": "Boa aderência pelas regras de energia, dados, infraestrutura, consultoria ou funding."
+        },
+        {
           "title": "Programa de Trainee",
           "company": "Neoenergia",
           "url": "https://www.neoenergia.com/programa-de-trainee",
@@ -240,21 +251,10 @@
           "priority": 60,
           "date": "2026-07-10",
           "reason": "Pagina oficial de carreira/programa sem vaga especifica suficiente para entrada automatica."
-        },
-        {
-          "title": "Iberdrola en Brasil",
-          "company": "Neoenergia",
-          "url": "https://www.iberdrola.com/conocenos/neoenergia",
-          "source": "historico",
-          "sourceDomain": "iberdrola.com",
-          "status": "monitorar",
-          "priority": 50,
-          "date": "2026-07-10",
-          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-07-17",
+      "lastSeenAt": "2026-08-26",
       "radarStatus": "Sinais recentes"
     },
     {
@@ -285,6 +285,17 @@
         "executivo"
       ],
       "radarMatches": [
+        {
+          "title": "EDP Global Graduate Program - Edp | PDF",
+          "company": "EDP",
+          "url": "https://www.scribd.com/document/1022264116/EDP-Global-Graduate-Program-edp",
+          "source": "historico",
+          "sourceDomain": "scribd.com",
+          "status": "repetida",
+          "priority": 0,
+          "date": "2026-08-26",
+          "reason": "Possível repetição detectada por titulo_parecido."
+        },
         {
           "title": "Start your career - Job Opportunities",
           "company": "EDP",
@@ -361,21 +372,10 @@
           "priority": 0,
           "date": "2026-07-24",
           "reason": "Possível repetição detectada por url."
-        },
-        {
-          "title": "EDP Global Graduate Program",
-          "company": "EDP",
-          "url": "https://edp.com/pt/carreiras/oportunidades-de-emprego/iniciar-a-carreira/edp-global-graduate-program",
-          "source": "historico",
-          "sourceDomain": "edp.com",
-          "status": "repetida",
-          "priority": 0,
-          "date": "2026-07-18",
-          "reason": "Possível repetição detectada por empresa_programa."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-19",
+      "lastSeenAt": "2026-08-26",
       "radarStatus": "Sinais recentes"
     },
     {
