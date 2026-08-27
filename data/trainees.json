@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-26",
+  "updatedAt": "2026-08-27",
   "sourceFiles": [
     "data/vagas.json",
     "data/historico_radar.json"
@@ -1119,6 +1119,17 @@
       ],
       "radarMatches": [
         {
+          "title": "Trainee Itaú Unibanco 2027 em Banco Itau",
+          "company": "Itau",
+          "url": "https://carreiras.itau.com.br/vaga/sao-paulo/trainee-itau-unibanco-2027/35299/98707091024",
+          "source": "historico",
+          "sourceDomain": "carreiras.itau.com.br",
+          "status": "nova",
+          "priority": 75,
+          "date": "2026-08-27",
+          "reason": "Fonte oficial de candidatura com aderencia minima ao perfil do Lucas."
+        },
+        {
           "title": "Itaú Unibanco Trainee Program 2025 – Learn more about the ... - YouTube",
           "company": "Itaú",
           "url": "https://www.youtube.com/watch?v=xyC9b4_Xy0Q",
@@ -1194,21 +1205,10 @@
           "priority": 0,
           "date": "2026-07-26",
           "reason": "Possível repetição detectada por url."
-        },
-        {
-          "title": "Abra sua conta no Banco Itaú: Soluções financeiras para você",
-          "company": "Itau",
-          "url": "https://www.itau.com.br/",
-          "source": "historico",
-          "sourceDomain": "itau.com.br",
-          "status": "monitorar",
-          "priority": 50,
-          "date": "2026-07-21",
-          "reason": "Há sinais úteis, mas faltam evidências para entrada automática no Atlas."
         }
       ],
       "radarCount": 8,
-      "lastSeenAt": "2026-08-22",
+      "lastSeenAt": "2026-08-27",
       "radarStatus": "Sinais recentes"
     },
     {
